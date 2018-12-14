@@ -77,18 +77,52 @@ header li:nth-of-type(6) a {
     border-right: none;
 }
 
-
-
-
-
-
-
-
-
+/* Section home first image */
 section.home.first-image {
-    flex-basis: 40vh;
-    background-color: blue;
+    flex-basis: 55vh;
+    background: url('Rysunki/HeadDrink1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
+section.home.first-image div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+}
+
+section.home.first-image h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+section.home.first-image p {
+    opacity: 0.6;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+section.home.first-image button {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+
+
+
+
 
 section.home.top-section {
     flex-basis: 50vh;

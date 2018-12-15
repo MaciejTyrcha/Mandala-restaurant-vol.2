@@ -142,6 +142,144 @@ section.menu.first-image div p {
   text-transform: uppercase;
 }
 
+section.menu.top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  padding: 50px 3vh;
+}
+
+section.menu.top-section .menu-list {
+  -ms-flex-preferred-size: 10vh;
+      flex-basis: 10vh;
+  width: 60%;
+}
+
+section.menu.top-section .menu-list h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #eeae33;
+}
+
+section.menu.top-section .menu-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+section.menu.top-section .menu-list ul li button {
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  color: #333;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+
+section.menu.top-section .menu-list ul li button:before {
+  content: '-';
+}
+
+section.menu.top-section .menu-list ul li button:after {
+  content: '-';
+}
+
+section.menu.top-section .menu-top-section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 60%;
+  -ms-flex-preferred-size: 50vh;
+      flex-basis: 50vh;
+}
+
+section.menu.top-section .menu-top-section-wrapper article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.menu.top-section .menu-top-section-wrapper h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+section.menu.top-section .menu-top-section-wrapper div {
+  margin: 20px 0;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  max-height: 500px;
+  width: 100%;
+}
+
+section.menu.top-section .menu-top-section-wrapper div h2 {
+  color: #eeae33;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: roboto, san-serif;
+}
+
+section.menu.top-section .menu-top-section-wrapper div .menu-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 10px;
+}
+
+section.menu.top-section .menu-top-section-wrapper div .menu-products p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+section.menu.top-section .menu-top-section-wrapper div .menu-products span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 2px dotted black;
+}
+
+section.menu.top-section .menu-top-section-wrapper div .menu-products h3 {
+  font-size: 22px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

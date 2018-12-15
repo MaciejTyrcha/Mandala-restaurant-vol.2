@@ -268,7 +268,6 @@ section.home.bottom-section {
           align-items: center;
   min-height: 80vh;
   padding: 50px 3vh;
-  width: 100%;
 }
 
 section.home.bottom-section .home-bottom-section-wrapper {
@@ -278,8 +277,8 @@ section.home.bottom-section .home-bottom-section-wrapper {
   display: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
 }
 
 section.home.bottom-section .home-bottom-section-wrapper article {

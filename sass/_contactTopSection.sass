@@ -34,7 +34,53 @@ section.contact.top-section
       font-size: 30px
       align-self: center
   .content-wrapper
-    background-color: green
+    display: flex
+    flex-direction: column
+    justify-content: top
     flex-basis: 45%
     height: 100%
+    h1 
+      font-size: 40px
+      margin-bottom: 20px
+      text-transform: uppercase
+      letter-spacing: 4px
+      color: $font-orange
+    .content-address
+      display: flex
+      flex-direction: column
+      flex-basis: 50%
+      div 
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        flex-basis: 95%
+        h3 
+          font-size: 30px
+          text-transform: uppercase
+        p 
+          font-size: 20px
+          letter-spacing: 1px
+          justify-self: start
+          font-style: italic
+    .content-openings
+      display: flex
+      flex-direction: column
+      flex-basis: 50%
+      div 
+        display: grid
+        grid-template-columns: 2fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        flex-basis: 95%
+        h3 
+          font-size: 25px
+          font-weight: 100
+        p 
+          font-size: 25px
+          letter-spacing: 1px
+          justify-self: start
+          text-transform: uppercase
+          font-weight: 600
+      
+
+    
     

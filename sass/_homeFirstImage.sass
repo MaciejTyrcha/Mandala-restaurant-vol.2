@@ -1,27 +1,56 @@
-.first-image 
+.first-image
+  width: 100% 
   flex-basis: 100vh
   background: url('../Rysunki/head/HeadFirst1920.jpg')
   background-repeat: no-repeat
   background-size: cover
   background-position: left center
   position: relative
+  @media (max-width: 459px)
+    background-position: 6% center
+
   div 
     position: absolute
     top: 35%
-    left: 50%
+    left: 55%
     transform: translate(0, -50%)
     color: #fff
     padding: 20px 30px
+    @media (max-width: 1100px)
+      background-color: rgba(0, 0, 0, 0.5)
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 80%
+      text-align: center
+    @media (max-width: 770px)
+      width: 100%
+     
   h1 
     text-transform: uppercase
     font-family: 'Roboto', sans-serif
     letter-spacing: 5px
     font-size: 50px
     margin-bottom: 10px
+    @media (max-width: 1360px)
+      font-size: 40px
+    @media (max-width: 1230px)
+      font-size: 35px
+    @media (max-width: 770px)
+      font-size: 28px
+    @media (max-width: 639px)
+      font-size: 24px 
+    @media (max-width: 459px)
+      font-size: 26px
   p 
     opacity: 0.6
     font-size: 18px
     margin-bottom: 40px
+    @media (max-width: 770px)
+      font-size: 12
+      margin-bottom: 55px
+    @media (max-width: 639px)
+      font-size: 16px   
   a 
     text-decoration: none
     text-transform: uppercase
@@ -31,4 +60,17 @@
     padding: 15px 40px
     border: 3px solid #fff
     border-radius: 5px
+    transition: 0.2s linear
+    &:hover 
+      background-color: #fff
+      color: black
+    @media (max-width: 1230px)
+      font-size: 16px
+      padding: 14px 45px
+    @media (max-width: 770px)
+      font-size: 14px
+    @media (max-width: 639px) 
+      font-size: 20px
+      padding: 18px 50px 
+      border: 2px solid #fff
   

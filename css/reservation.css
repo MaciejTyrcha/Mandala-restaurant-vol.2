@@ -15,6 +15,7 @@
           flex-direction: column;
   font-family: arial, sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {

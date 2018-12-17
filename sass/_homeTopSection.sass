@@ -1,44 +1,117 @@
 .top-section 
   display: flex
   width: 100%
-  padding: 50px 3vh
-  justify-content: space-between
-  min-height: 90vh
+  padding: 50px 3vh 0 3vh
+  justify-content: space-around
+  min-height: 85vh
+  @media (max-width: 1170px)
+    flex-direction: column
+  @media (max-width: 750px)
+    padding: 0
   article 
     display: flex
     flex-direction: column
     justify-content: top
-    align-items: center
     flex-basis: 30%
     font-family: roboto
-    div
-      height: 700px
-    img 
+    margin-bottom: 50px
+    @media (max-width: 1170px)
+      width: 80%
+      align-self: center
+      position: relative
+    @media (max-width: 880px)
+      width: 95%
+    @media (max-width: 750px)
       width: 100%
-      background-size: cover
-      background-repeat: no-repeat
-      min-width: 410px
-      max-height: 300px
-    p
-      margin: 20px 0
-      font-size: 18px
-      letter-spacing: 2px
-      &:nth-of-type(1) 
-        margin: 20px 0
-        font-style: italic
-        color: $font-orange
-        font-size: 35px
-    h1 
-      text-transform: uppercase
-      font-size: 45px
-      letter-spacing: 4px
+      margin-bottom: 0
     a
+      align-self: center
       text-decoration: none
       color: #fff
       padding: 15px 60px
       background-color: $font-orange
       font-size: 30px
-      flex-shrink: 1
+      @media (max-width: 1170px)
+        position: absolute
+        bottom: 10%
+        background-color: rgba(0, 0, 0, 0.7)
+        padding: 15px 40px
+        border-radius: 5px
+      @media (max-width: 1020px)
+        bottom: 5%
+      @media (max-width: 750px)
+        bottom: 8%
+      @media (max-width: 460px)
+        bottom: 5%
+        font-size: 26px
+.top-section-wrapper
+  display: flex
+  flex-direction: column
+  flex-basis: 90%
+  @media (max-width: 1360px)
+    flex-basis: 80%
+  img 
+      width: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      @media (max-width: 1360px)
+        align-self: center
+      @media (max-width: 750px)
+        height: 50vh
+        width: auto
+  div
+    @media (max-width: 1170px)
+      display: flex
+      flex-direction: column
+      position: absolute
+      background-color: rgba(0, 0, 0, 0.7)
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      align-items: center
+      padding: 0 20px
+    p
+      margin: 20px 0
+      font-size: 18px
+      letter-spacing: 2px
+      @media (max-width: 1360px)
+        font-size: 16px
+      @media (max-width: 1170px)
+        color: #fff
+        opacity: 0.6
+      @media (max-width: 1020px)
+        font-size: 14px
+      @media (max-width: 460px)
+        font-size: 12px
+        margin: 10px 0
+      &:nth-of-type(1) 
+        margin: 20px 0
+        font-style: italic
+        color: $font-orange
+        font-size: 35px
+        @media (max-width: 1360px)
+          font-size: 30px
+        @media (max-width: 1020px)
+          font-size: 25px
+        @media (max-width: 460px)
+          font-size: 22px
+          margin: 10px 0
+  
+    h1 
+      text-transform: uppercase
+      font-size: 45px
+      letter-spacing: 4px
+      @media (max-width: 1360px)
+        font-size: 40px
+      @media (max-width: 1170px)
+        color: #fff
+      @media (max-width: 1020px)
+        font-size: 35px
+      @media (max-width: 460px)
+        font-size: 30px
+
+      
 
 
   

@@ -2,18 +2,32 @@ header
   display: flex
   background-color: #fff
   align-items: center
-  justify-content: center
+  justify-content: space-around
   padding: 0 5vh
   height: 150px
+  @media (max-width: 1360px)
+    height: 130px
+  @media (max-width: 1170px)
+    height: 100px
+  @media (max-width: 880px)
+    height: 80px
+  @media (max-width: 750px)
+    padding: 0 0
+    height: 70px
+  @media (max-width: 670px)
+    padding: 0 0    
+  @media (max-width: 640px)
+    display: none
   div 
     display: flex
     background-repeat: no-repeat
     background-size: auto 100%
     background-position: center
     height: 80%
-    flex-grow: 2
     align-items: center
     justify-content: center
+    @media (max-width: 1020px)
+        display: none
     img 
       height: 100%
     h1 
@@ -24,10 +38,22 @@ header
       margin-left: 30px
       align-items: center
       letter-spacing: 10px
+      font-size: 32px
+      @media (max-width: 1360px)
+        font-size: 28px
+      @media (max-width: 1170px)
+        font-size: 20px
       &:after 
         content: "Restauracja"
         font-size: 20px
         font-family: 'Indie Flower', cursive
+        @media (max-width: 1360px)
+          font-size: 18px
+        @media (max-width: 1170px)
+          font-size: 14px
+nav 
+  display: flex
+  align-items: center
   ul 
     display: flex
     list-style: none
@@ -38,9 +64,20 @@ header
       padding: 15px 20px
       font-size: 25px
       border-right: 2px solid $font-orange
+      transition: 0.2s linear
+      &:hover 
+        color: $font-orange
+      @media (max-width: 1360px)
+        font-size: 22px
+      @media (max-width: 1230px)
+        font-size: 20px 
+      @media (max-width: 1170px)
+        font-size: 14px 
+      @media (max-width: 1020px)
+        font-size: 20px 
+      @media (max-width: 880px)
+        font-size: 16px
+      @media (max-width: 750px)
+        font-size: 14px
     li:nth-of-type(6) a 
       border-right: none
-nav 
-  display: flex
-  align-items: center
-  flex-grow: 1

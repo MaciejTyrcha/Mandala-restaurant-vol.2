@@ -110,40 +110,40 @@ nav {
           flex-grow: 1;
 }
 
-section.contact.first-image {
+section.reservation.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
-  background: url("../Rysunki/contact/contactFirstImage1920.jpg");
+  background: url("../Rysunki/reservation/reservationFirstImage1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
 
-section.contact.first-image div {
+section.reservation.first-image div {
   position: absolute;
-  top: 30%;
-  left: 55%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   color: #fff;
   padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.contact.first-image div h1 {
+section.reservation.first-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.contact.first-image div p {
+section.reservation.first-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.contact.top-section {
+section.reservation.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,13 +151,13 @@ section.contact.top-section {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 3vh;
-  margin: 0 30vh;
+  margin: 0 15vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 80vh;
 }
 
-section.contact.top-section .form {
+section.reservation.top-section .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@ section.contact.top-section .form {
   height: 100%;
 }
 
-section.contact.top-section .form form {
+section.reservation.top-section .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ section.contact.top-section .form form {
   margin-bottom: 20px;
 }
 
-section.contact.top-section .form form input {
+section.reservation.top-section .form form input {
   height: 10%;
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -191,14 +191,14 @@ section.contact.top-section .form form input {
   padding: 0 10px;
 }
 
-section.contact.top-section .form #textarea {
+section.reservation.top-section .form #textarea {
   border: 1px solid #ddd;
   font-size: 20px;
   padding: 10px 10px;
   resize: vertical;
 }
 
-section.contact.top-section .form button {
+section.reservation.top-section .form button {
   border: none;
   color: #fff;
   padding: 15px 60px;
@@ -209,7 +209,7 @@ section.contact.top-section .form button {
       align-self: center;
 }
 
-section.contact.top-section .content-wrapper {
+section.reservation.top-section .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,19 @@ section.contact.top-section .content-wrapper {
   height: 100%;
 }
 
-section.contact.top-section .content-wrapper h1 {
+section.reservation.top-section .content-wrapper h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+
+section.reservation.top-section .content-wrapper h1 strong {
+  font-weight: 600;
+}
+
+section.reservation.top-section .content-wrapper h2 {
   font-size: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -233,162 +245,10 @@ section.contact.top-section .content-wrapper h1 {
   color: #eeae33;
 }
 
-section.contact.top-section .content-wrapper .content-address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-section.contact.top-section .content-wrapper .content-address div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-flex-preferred-size: 95%;
-      flex-basis: 95%;
-}
-
-section.contact.top-section .content-wrapper .content-address div h3 {
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-section.contact.top-section .content-wrapper .content-address div p {
+section.reservation.top-section .content-wrapper p {
   font-size: 20px;
   letter-spacing: 1px;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  font-style: italic;
-}
-
-section.contact.top-section .content-wrapper .content-openings {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-section.contact.top-section .content-wrapper .content-openings div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-flex-preferred-size: 95%;
-      flex-basis: 95%;
-}
-
-section.contact.top-section .content-wrapper .content-openings div h3 {
-  font-size: 25px;
-  font-weight: 100;
-}
-
-section.contact.top-section .content-wrapper .content-openings div p {
-  font-size: 25px;
-  letter-spacing: 1px;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-section.contact.second-image {
-  -ms-flex-preferred-size: 100vh;
-      flex-basis: 100vh;
-  background: url("../Rysunki/contact/contactSecondImage1920.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-section.contact.second-image div {
-  position: absolute;
-  top: 65%;
-  left: 10%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  color: #fff;
-  padding: 20px 30px;
-}
-
-section.contact.second-image div h1 {
-  font-size: 85px;
-  color: #eeae33;
-  font-family: 'Indie Flower', cursive;
-}
-
-section.contact.second-image div p {
-  font-size: 50px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-section.contact.bottom-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 3vh;
-  margin: 0 10vh;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-height: 80vh;
-}
-
-section.contact.bottom-section aside {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-}
-
-section.contact.bottom-section aside #map {
-  width: 100%;
-  height: 100%;
-}
-
-section.contact.bottom-section div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-}
-
-section.contact.bottom-section div h1 {
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 4px;
-  font-weight: 100;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #eeae33;
-  padding: 0 0 15px 0;
-}
-
-section.contact.bottom-section div h1 strong {
-  font-weight: 600;
-}
-
-section.contact.bottom-section div p {
-  font-size: 20px;
-  letter-spacing: 1px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -503,4 +363,4 @@ footer .footer-copyrights span {
 footer .footer-copyrights span p {
   margin-left: 10px;
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=reservation.css.map */

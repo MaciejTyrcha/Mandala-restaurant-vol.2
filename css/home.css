@@ -110,7 +110,7 @@ nav {
           flex-grow: 1;
 }
 
-section.home.first-image {
+.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/head/HeadFirst1920.jpg");
@@ -120,7 +120,7 @@ section.home.first-image {
   position: relative;
 }
 
-section.home.first-image div {
+.first-image div {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -130,7 +130,7 @@ section.home.first-image div {
   padding: 20px 30px;
 }
 
-section.home.first-image h1 {
+.first-image h1 {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
@@ -138,13 +138,13 @@ section.home.first-image h1 {
   margin-bottom: 10px;
 }
 
-section.home.first-image p {
+.first-image p {
   opacity: 0.6;
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-section.home.first-image a {
+.first-image a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
@@ -155,7 +155,7 @@ section.home.first-image a {
   border-radius: 5px;
 }
 
-section.home.top-section {
+.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +167,7 @@ section.home.top-section {
   min-height: 90vh;
 }
 
-section.home.top-section article {
+.top-section article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,11 +186,11 @@ section.home.top-section article {
   font-family: roboto;
 }
 
-section.home.top-section article div {
+.top-section article div {
   height: 700px;
 }
 
-section.home.top-section article img {
+.top-section article img {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,26 +198,26 @@ section.home.top-section article img {
   max-height: 300px;
 }
 
-section.home.top-section article p {
+.top-section article p {
   margin: 20px 0;
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-section.home.top-section article p:nth-of-type(1) {
+.top-section article p:nth-of-type(1) {
   margin: 20px 0;
   font-style: italic;
   color: #eeae33;
   font-size: 35px;
 }
 
-section.home.top-section article h1 {
+.top-section article h1 {
   text-transform: uppercase;
   font-size: 45px;
   letter-spacing: 4px;
 }
 
-section.home.top-section article a {
+.top-section article a {
   text-decoration: none;
   color: #fff;
   padding: 15px 60px;
@@ -227,7 +227,7 @@ section.home.top-section article a {
       flex-shrink: 1;
 }
 
-section.home.second-image {
+.second-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/head/HeadSecond1920.jpg");
@@ -237,25 +237,25 @@ section.home.second-image {
   position: relative;
 }
 
-section.home.second-image div {
+.second-image div {
   position: absolute;
   top: 50%;
   left: 70%;
 }
 
-section.home.second-image div h1 {
+.second-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.home.second-image div p {
+.second-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
 }
 
-section.home.bottom-section {
+.bottom-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +270,16 @@ section.home.bottom-section {
   padding: 50px 3vh;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper {
+.bottom-section a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 60px;
+  background-color: #eeae33;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.home-bottom-section-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +290,7 @@ section.home.bottom-section .home-bottom-section-wrapper {
       flex-basis: 90%;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper article {
+.home-bottom-section-wrapper article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +308,7 @@ section.home.bottom-section .home-bottom-section-wrapper article {
           align-items: flex-start;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper h1 {
+.home-bottom-section-wrapper article h1 {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
@@ -307,18 +316,18 @@ section.home.bottom-section .home-bottom-section-wrapper h1 {
   margin-bottom: 25px;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper h1 strong {
+.home-bottom-section-wrapper article h1 strong {
   font-weight: 600;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper div {
+.home-bottom-section-wrapper div {
   margin: 20px 0;
   -ms-flex-preferred-size: 53%;
       flex-basis: 53%;
   max-height: 500px;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper div h2 {
+.home-bottom-section-wrapper div h2 {
   color: #eeae33;
   font-weight: 100;
   letter-spacing: 3px;
@@ -326,19 +335,10 @@ section.home.bottom-section .home-bottom-section-wrapper div h2 {
   font-family: roboto, sans-serif;
 }
 
-section.home.bottom-section .home-bottom-section-wrapper div p {
+.home-bottom-section-wrapper div p {
   font-size: 20px;
   letter-spacing: 1px;
   margin-top: 10px;
-}
-
-section.home.bottom-section a {
-  text-decoration: none;
-  color: #fff;
-  padding: 15px 60px;
-  background-color: #eeae33;
-  font-size: 30px;
-  margin-top: 40px;
 }
 
 footer {
@@ -357,7 +357,7 @@ footer {
   background-color: black;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +372,7 @@ footer .footer-wrapper {
   border-bottom: 2px solid #444;
 }
 
-footer .footer-wrapper div {
+.footer-wrapper div {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-top: 70px;
@@ -380,40 +380,40 @@ footer .footer-wrapper div {
   color: #ddd;
 }
 
-footer .footer-wrapper div h1 {
+.footer-wrapper div h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
-footer .footer-wrapper ul {
+.footer-wrapper ul {
   list-style: none;
 }
 
-footer .footer-wrapper ul li {
+.footer-wrapper ul li {
   opacity: 0.4;
   margin: 20px 0;
 }
 
-footer .footer-wrapper ul a {
+.footer-wrapper ul a {
   text-decoration: none;
   color: #ddd;
 }
 
-footer .footer-wrapper .footer-address span {
+.footer-address span {
   margin-right: 25px;
 }
 
-footer .footer-wrapper .footer-links li {
+.footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #777;
 }
 
-footer .footer-wrapper .footer-links li span {
+.footer-links li span {
   margin-right: 10px;
 }
 
-footer .footer-wrapper .footer-open-time span {
+.footer-open-time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,25 +422,25 @@ footer .footer-wrapper .footer-open-time span {
   margin-bottom: 7px;
 }
 
-footer .footer-wrapper .footer-social-media span {
+.footer-social-media span {
   margin-right: 20px;
   font-size: 30px;
 }
 
-footer .footer-copyrights {
+.footer-copyrights {
   color: #888;
   position: relative;
   padding: 10px 0;
 }
 
-footer .footer-copyrights h1 {
+.footer-copyrights h1 {
   position: absolute;
   color: #777;
   font-size: 18px;
   top: 50%;
 }
 
-footer .footer-copyrights span {
+.footer-copyrights span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,7 +449,7 @@ footer .footer-copyrights span {
   right: 0%;
 }
 
-footer .footer-copyrights span p {
+.footer-copyrights p {
   margin-left: 10px;
 }
 /*# sourceMappingURL=home.css.map */

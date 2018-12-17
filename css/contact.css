@@ -110,7 +110,7 @@ nav {
           flex-grow: 1;
 }
 
-section.contact.first-image {
+.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/contact/contactFirstImage1920.jpg");
@@ -120,7 +120,7 @@ section.contact.first-image {
   position: relative;
 }
 
-section.contact.first-image div {
+.first-image div {
   position: absolute;
   top: 30%;
   left: 55%;
@@ -130,20 +130,20 @@ section.contact.first-image div {
   padding: 20px 30px;
 }
 
-section.contact.first-image div h1 {
+.first-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.contact.first-image div p {
+.first-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.contact.top-section {
+.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ section.contact.top-section {
   min-height: 80vh;
 }
 
-section.contact.top-section .form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@ section.contact.top-section .form {
   height: 100%;
 }
 
-section.contact.top-section .form form {
+.form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ section.contact.top-section .form form {
   margin-bottom: 20px;
 }
 
-section.contact.top-section .form form input {
+.form form input {
   height: 10%;
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -191,14 +191,14 @@ section.contact.top-section .form form input {
   padding: 0 10px;
 }
 
-section.contact.top-section .form #textarea {
+.form #textarea {
   border: 1px solid #ddd;
   font-size: 20px;
   padding: 10px 10px;
   resize: vertical;
 }
 
-section.contact.top-section .form button {
+.form button {
   border: none;
   color: #fff;
   padding: 15px 60px;
@@ -209,7 +209,7 @@ section.contact.top-section .form button {
       align-self: center;
 }
 
-section.contact.top-section .content-wrapper {
+.content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ section.contact.top-section .content-wrapper {
   height: 100%;
 }
 
-section.contact.top-section .content-wrapper h1 {
+.content-wrapper h1 {
   font-size: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -233,7 +233,7 @@ section.contact.top-section .content-wrapper h1 {
   color: #eeae33;
 }
 
-section.contact.top-section .content-wrapper .content-address {
+.content-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +245,7 @@ section.contact.top-section .content-wrapper .content-address {
       flex-basis: 50%;
 }
 
-section.contact.top-section .content-wrapper .content-address div {
+.content-address div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -256,12 +256,9 @@ section.contact.top-section .content-wrapper .content-address div {
       flex-basis: 95%;
 }
 
-section.contact.top-section .content-wrapper .content-address div h3 {
+.content-address div h3 {
   font-size: 30px;
   text-transform: uppercase;
-}
-
-section.contact.top-section .content-wrapper .content-address div p {
   font-size: 20px;
   letter-spacing: 1px;
   -ms-grid-column-align: start;
@@ -269,7 +266,7 @@ section.contact.top-section .content-wrapper .content-address div p {
   font-style: italic;
 }
 
-section.contact.top-section .content-wrapper .content-openings {
+.content-openings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +278,7 @@ section.contact.top-section .content-wrapper .content-openings {
       flex-basis: 50%;
 }
 
-section.contact.top-section .content-wrapper .content-openings div {
+.content-openings div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -292,12 +289,12 @@ section.contact.top-section .content-wrapper .content-openings div {
       flex-basis: 95%;
 }
 
-section.contact.top-section .content-wrapper .content-openings div h3 {
+.content-openings div h3 {
   font-size: 25px;
   font-weight: 100;
 }
 
-section.contact.top-section .content-wrapper .content-openings div p {
+.content-openings div p {
   font-size: 25px;
   letter-spacing: 1px;
   -ms-grid-column-align: start;
@@ -306,7 +303,7 @@ section.contact.top-section .content-wrapper .content-openings div p {
   font-weight: 600;
 }
 
-section.contact.second-image {
+.second-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/contact/contactSecondImage1920.jpg");
@@ -316,7 +313,7 @@ section.contact.second-image {
   position: relative;
 }
 
-section.contact.second-image div {
+.second-image div {
   position: absolute;
   top: 65%;
   left: 10%;
@@ -326,20 +323,20 @@ section.contact.second-image div {
   padding: 20px 30px;
 }
 
-section.contact.second-image div h1 {
+.second-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.contact.second-image div p {
+.second-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.contact.bottom-section {
+.bottom-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,17 +347,17 @@ section.contact.bottom-section {
   min-height: 80vh;
 }
 
-section.contact.bottom-section aside {
+.bottom-section aside {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
 }
 
-section.contact.bottom-section aside #map {
+.bottom-section aside #map {
   width: 100%;
   height: 100%;
 }
 
-section.contact.bottom-section div {
+.bottom-section div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +369,7 @@ section.contact.bottom-section div {
       flex-basis: 45%;
 }
 
-section.contact.bottom-section div h1 {
+.bottom-section div h1 {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
@@ -382,11 +379,11 @@ section.contact.bottom-section div h1 {
   padding: 0 0 15px 0;
 }
 
-section.contact.bottom-section div h1 strong {
+.bottom-section div h1 strong {
   font-weight: 600;
 }
 
-section.contact.bottom-section div p {
+.bottom-section div p {
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -408,7 +405,7 @@ footer {
   background-color: black;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +420,7 @@ footer .footer-wrapper {
   border-bottom: 2px solid #444;
 }
 
-footer .footer-wrapper div {
+.footer-wrapper div {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-top: 70px;
@@ -431,40 +428,40 @@ footer .footer-wrapper div {
   color: #ddd;
 }
 
-footer .footer-wrapper div h1 {
+.footer-wrapper div h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
-footer .footer-wrapper ul {
+.footer-wrapper ul {
   list-style: none;
 }
 
-footer .footer-wrapper ul li {
+.footer-wrapper ul li {
   opacity: 0.4;
   margin: 20px 0;
 }
 
-footer .footer-wrapper ul a {
+.footer-wrapper ul a {
   text-decoration: none;
   color: #ddd;
 }
 
-footer .footer-wrapper .footer-address span {
+.footer-address span {
   margin-right: 25px;
 }
 
-footer .footer-wrapper .footer-links li {
+.footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #777;
 }
 
-footer .footer-wrapper .footer-links li span {
+.footer-links li span {
   margin-right: 10px;
 }
 
-footer .footer-wrapper .footer-open-time span {
+.footer-open-time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,25 +470,25 @@ footer .footer-wrapper .footer-open-time span {
   margin-bottom: 7px;
 }
 
-footer .footer-wrapper .footer-social-media span {
+.footer-social-media span {
   margin-right: 20px;
   font-size: 30px;
 }
 
-footer .footer-copyrights {
+.footer-copyrights {
   color: #888;
   position: relative;
   padding: 10px 0;
 }
 
-footer .footer-copyrights h1 {
+.footer-copyrights h1 {
   position: absolute;
   color: #777;
   font-size: 18px;
   top: 50%;
 }
 
-footer .footer-copyrights span {
+.footer-copyrights span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +497,7 @@ footer .footer-copyrights span {
   right: 0%;
 }
 
-footer .footer-copyrights span p {
+.footer-copyrights p {
   margin-left: 10px;
 }
 /*# sourceMappingURL=contact.css.map */

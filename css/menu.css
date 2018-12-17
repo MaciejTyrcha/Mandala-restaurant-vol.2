@@ -110,7 +110,7 @@ nav {
           flex-grow: 1;
 }
 
-section.menu.first-image {
+.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/menu/menuFirstImage1920.jpg");
@@ -120,7 +120,7 @@ section.menu.first-image {
   position: relative;
 }
 
-section.menu.first-image div {
+.first-image div {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -130,13 +130,13 @@ section.menu.first-image div {
   padding: 20px 30px;
 }
 
-section.menu.first-image div h1 {
+.first-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.menu.first-image div p {
+.first-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
@@ -157,13 +157,13 @@ section.menu.top-section {
   padding: 50px 3vh;
 }
 
-section.menu.top-section .menu-list {
+.menu-list {
   -ms-flex-preferred-size: 10vh;
       flex-basis: 10vh;
   width: 60%;
 }
 
-section.menu.top-section .menu-list h1 {
+.menu-list h1 {
   text-transform: uppercase;
   font-size: 50px;
   letter-spacing: 4px;
@@ -172,7 +172,7 @@ section.menu.top-section .menu-list h1 {
   border-bottom: 2px solid #eeae33;
 }
 
-section.menu.top-section .menu-list ul {
+.menu-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ section.menu.top-section .menu-list ul {
   margin-bottom: 40px;
 }
 
-section.menu.top-section .menu-list ul li button {
+.menu-list ul li button {
   border: none;
   background-color: white;
   color: #333;
@@ -191,15 +191,15 @@ section.menu.top-section .menu-list ul li button {
   font-size: 25px;
 }
 
-section.menu.top-section .menu-list ul li button:before {
+.menu-list ul li button:before {
   content: '-';
 }
 
-section.menu.top-section .menu-list ul li button:after {
+.menu-list ul li button:after {
   content: '-';
 }
 
-section.menu.top-section .menu-top-section-wrapper {
+.menu-top-section-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ section.menu.top-section .menu-top-section-wrapper {
       flex-basis: 50vh;
 }
 
-section.menu.top-section .menu-top-section-wrapper article {
+.menu-top-section-wrapper article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,14 +234,14 @@ section.menu.top-section .menu-top-section-wrapper article {
   margin-top: 20px;
 }
 
-section.menu.top-section .menu-top-section-wrapper h1 {
+.menu-top-section-wrapper h1 {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
   margin-bottom: 20px;
 }
 
-section.menu.top-section .menu-top-section-wrapper div {
+.menu-top-section-wrapper div {
   margin: 20px 0;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -249,7 +249,7 @@ section.menu.top-section .menu-top-section-wrapper div {
   width: 100%;
 }
 
-section.menu.top-section .menu-top-section-wrapper div h2 {
+.menu-top-section-wrapper div h2 {
   color: #eeae33;
   font-weight: 100;
   letter-spacing: 3px;
@@ -257,7 +257,7 @@ section.menu.top-section .menu-top-section-wrapper div h2 {
   font-family: roboto, san-serif;
 }
 
-section.menu.top-section .menu-top-section-wrapper div .menu-products {
+.menu-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,20 +267,20 @@ section.menu.top-section .menu-top-section-wrapper div .menu-products {
   margin-top: 10px;
 }
 
-section.menu.top-section .menu-top-section-wrapper div .menu-products p {
+.menu-products p {
   font-size: 19px;
   letter-spacing: 1px;
   font-style: italic;
 }
 
-section.menu.top-section .menu-top-section-wrapper div .menu-products span {
+.menu-products span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   border-bottom: 2px dotted black;
 }
 
-section.menu.top-section .menu-top-section-wrapper div .menu-products h3 {
+.menu-products h3 {
   font-size: 22px;
 }
 
@@ -300,7 +300,7 @@ footer {
   background-color: black;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +315,7 @@ footer .footer-wrapper {
   border-bottom: 2px solid #444;
 }
 
-footer .footer-wrapper div {
+.footer-wrapper div {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-top: 70px;
@@ -323,40 +323,40 @@ footer .footer-wrapper div {
   color: #ddd;
 }
 
-footer .footer-wrapper div h1 {
+.footer-wrapper div h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
-footer .footer-wrapper ul {
+.footer-wrapper ul {
   list-style: none;
 }
 
-footer .footer-wrapper ul li {
+.footer-wrapper ul li {
   opacity: 0.4;
   margin: 20px 0;
 }
 
-footer .footer-wrapper ul a {
+.footer-wrapper ul a {
   text-decoration: none;
   color: #ddd;
 }
 
-footer .footer-wrapper .footer-address span {
+.footer-address span {
   margin-right: 25px;
 }
 
-footer .footer-wrapper .footer-links li {
+.footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #777;
 }
 
-footer .footer-wrapper .footer-links li span {
+.footer-links li span {
   margin-right: 10px;
 }
 
-footer .footer-wrapper .footer-open-time span {
+.footer-open-time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,25 +365,25 @@ footer .footer-wrapper .footer-open-time span {
   margin-bottom: 7px;
 }
 
-footer .footer-wrapper .footer-social-media span {
+.footer-social-media span {
   margin-right: 20px;
   font-size: 30px;
 }
 
-footer .footer-copyrights {
+.footer-copyrights {
   color: #888;
   position: relative;
   padding: 10px 0;
 }
 
-footer .footer-copyrights h1 {
+.footer-copyrights h1 {
   position: absolute;
   color: #777;
   font-size: 18px;
   top: 50%;
 }
 
-footer .footer-copyrights span {
+.footer-copyrights span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +392,7 @@ footer .footer-copyrights span {
   right: 0%;
 }
 
-footer .footer-copyrights span p {
+.footer-copyrights p {
   margin-left: 10px;
 }
 /*# sourceMappingURL=menu.css.map */

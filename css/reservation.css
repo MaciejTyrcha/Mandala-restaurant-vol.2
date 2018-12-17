@@ -110,7 +110,7 @@ nav {
           flex-grow: 1;
 }
 
-section.reservation.first-image {
+.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/reservation/reservationFirstImage1920.jpg");
@@ -120,7 +120,7 @@ section.reservation.first-image {
   position: relative;
 }
 
-section.reservation.first-image div {
+.first-image div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,19 +131,19 @@ section.reservation.first-image div {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.reservation.first-image div h1 {
+.first-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.reservation.first-image div p {
+.first-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
 }
 
-section.reservation.top-section {
+.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ section.reservation.top-section {
   min-height: 80vh;
 }
 
-section.reservation.top-section .form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@ section.reservation.top-section .form {
   height: 100%;
 }
 
-section.reservation.top-section .form form {
+.form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ section.reservation.top-section .form form {
   margin-bottom: 20px;
 }
 
-section.reservation.top-section .form form input {
+.form form input {
   height: 10%;
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -191,14 +191,14 @@ section.reservation.top-section .form form input {
   padding: 0 10px;
 }
 
-section.reservation.top-section .form #textarea {
+.form form #textarea {
   border: 1px solid #ddd;
   font-size: 20px;
   padding: 10px 10px;
   resize: vertical;
 }
 
-section.reservation.top-section .form button {
+.form button {
   border: none;
   color: #fff;
   padding: 15px 60px;
@@ -209,7 +209,7 @@ section.reservation.top-section .form button {
       align-self: center;
 }
 
-section.reservation.top-section .content-wrapper {
+.content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ section.reservation.top-section .content-wrapper {
   height: 100%;
 }
 
-section.reservation.top-section .content-wrapper h1 {
+.content-wrapper h1 {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
@@ -233,11 +233,11 @@ section.reservation.top-section .content-wrapper h1 {
   margin-bottom: 25px;
 }
 
-section.reservation.top-section .content-wrapper h1 strong {
+.content-wrapper h1 strong {
   font-weight: 600;
 }
 
-section.reservation.top-section .content-wrapper h2 {
+.content-wrapper h2 {
   font-size: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ section.reservation.top-section .content-wrapper h2 {
   color: #eeae33;
 }
 
-section.reservation.top-section .content-wrapper p {
+.content-wrapper p {
   font-size: 20px;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -268,7 +268,7 @@ footer {
   background-color: black;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +283,7 @@ footer .footer-wrapper {
   border-bottom: 2px solid #444;
 }
 
-footer .footer-wrapper div {
+.footer-wrapper div {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-top: 70px;
@@ -291,40 +291,40 @@ footer .footer-wrapper div {
   color: #ddd;
 }
 
-footer .footer-wrapper div h1 {
+.footer-wrapper div h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
-footer .footer-wrapper ul {
+.footer-wrapper ul {
   list-style: none;
 }
 
-footer .footer-wrapper ul li {
+.footer-wrapper ul li {
   opacity: 0.4;
   margin: 20px 0;
 }
 
-footer .footer-wrapper ul a {
+.footer-wrapper ul a {
   text-decoration: none;
   color: #ddd;
 }
 
-footer .footer-wrapper .footer-address span {
+.footer-address span {
   margin-right: 25px;
 }
 
-footer .footer-wrapper .footer-links li {
+.footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #777;
 }
 
-footer .footer-wrapper .footer-links li span {
+.footer-links li span {
   margin-right: 10px;
 }
 
-footer .footer-wrapper .footer-open-time span {
+.footer-open-time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,25 +333,25 @@ footer .footer-wrapper .footer-open-time span {
   margin-bottom: 7px;
 }
 
-footer .footer-wrapper .footer-social-media span {
+.footer-social-media span {
   margin-right: 20px;
   font-size: 30px;
 }
 
-footer .footer-copyrights {
+.footer-copyrights {
   color: #888;
   position: relative;
   padding: 10px 0;
 }
 
-footer .footer-copyrights h1 {
+.footer-copyrights h1 {
   position: absolute;
   color: #777;
   font-size: 18px;
   top: 50%;
 }
 
-footer .footer-copyrights span {
+.footer-copyrights span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,7 +360,7 @@ footer .footer-copyrights span {
   right: 0%;
 }
 
-footer .footer-copyrights span p {
+.footer-copyrights p {
   margin-left: 10px;
 }
 /*# sourceMappingURL=reservation.css.map */

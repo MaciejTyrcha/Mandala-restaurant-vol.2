@@ -110,7 +110,7 @@ nav {
           flex-grow: 1;
 }
 
-section.about.first-image {
+.first-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
   background: url("../Rysunki/about/aboutFirstImage1920.jpg");
@@ -120,7 +120,7 @@ section.about.first-image {
   position: relative;
 }
 
-section.about.first-image div {
+.first-image div {
   position: absolute;
   top: 30%;
   left: 45%;
@@ -130,20 +130,20 @@ section.about.first-image div {
   padding: 20px 30px;
 }
 
-section.about.first-image div h1 {
+.first-image div h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
-section.about.first-image div p {
+.first-image div p {
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-section.about.top-section {
+.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +160,7 @@ section.about.top-section {
   min-height: 150vh;
 }
 
-section.about.top-section article {
+article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,13 +171,13 @@ section.about.top-section article {
   width: 94%;
 }
 
-section.about.top-section article:nth-child(even) .about-content {
+article:nth-child(even) .about-content {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-section.about.top-section article .about-content {
+.about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +190,7 @@ section.about.top-section article .about-content {
   padding: 0 30px;
 }
 
-section.about.top-section article .about-content h1 {
+.about-content h1 {
   color: #eeae33;
   font-size: 40px;
   margin-bottom: 15px;
@@ -198,13 +198,13 @@ section.about.top-section article .about-content h1 {
   font-family: roboto, sans-serif;
 }
 
-section.about.top-section article .about-content h2 {
+.about-content h2 {
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-section.about.top-section article .about-content p {
+.about-content p {
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -212,7 +212,7 @@ section.about.top-section article .about-content p {
       flex-basis: 70%;
 }
 
-section.about.top-section article .about-content a {
+.about-content a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -225,7 +225,7 @@ section.about.top-section article .about-content a {
   margin-top: 40px;
 }
 
-section.about.top-section article .about-image {
+.about-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +237,7 @@ section.about.top-section article .about-image {
       flex-basis: 50%;
 }
 
-section.about.top-section article .about-image img {
+.about-image img {
   height: 100%;
 }
 
@@ -257,7 +257,7 @@ footer {
   background-color: black;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +272,7 @@ footer .footer-wrapper {
   border-bottom: 2px solid #444;
 }
 
-footer .footer-wrapper div {
+.footer-wrapper div {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-top: 70px;
@@ -280,40 +280,40 @@ footer .footer-wrapper div {
   color: #ddd;
 }
 
-footer .footer-wrapper div h1 {
+.footer-wrapper div h1 {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
-footer .footer-wrapper ul {
+.footer-wrapper ul {
   list-style: none;
 }
 
-footer .footer-wrapper ul li {
+.footer-wrapper ul li {
   opacity: 0.4;
   margin: 20px 0;
 }
 
-footer .footer-wrapper ul a {
+.footer-wrapper ul a {
   text-decoration: none;
   color: #ddd;
 }
 
-footer .footer-wrapper .footer-address span {
+.footer-address span {
   margin-right: 25px;
 }
 
-footer .footer-wrapper .footer-links li {
+.footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #777;
 }
 
-footer .footer-wrapper .footer-links li span {
+.footer-links li span {
   margin-right: 10px;
 }
 
-footer .footer-wrapper .footer-open-time span {
+.footer-open-time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,25 +322,25 @@ footer .footer-wrapper .footer-open-time span {
   margin-bottom: 7px;
 }
 
-footer .footer-wrapper .footer-social-media span {
+.footer-social-media span {
   margin-right: 20px;
   font-size: 30px;
 }
 
-footer .footer-copyrights {
+.footer-copyrights {
   color: #888;
   position: relative;
   padding: 10px 0;
 }
 
-footer .footer-copyrights h1 {
+.footer-copyrights h1 {
   position: absolute;
   color: #777;
   font-size: 18px;
   top: 50%;
 }
 
-footer .footer-copyrights span {
+.footer-copyrights span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +349,7 @@ footer .footer-copyrights span {
   right: 0%;
 }
 
-footer .footer-copyrights span p {
+.footer-copyrights p {
   margin-left: 10px;
 }
 /*# sourceMappingURL=about.css.map */

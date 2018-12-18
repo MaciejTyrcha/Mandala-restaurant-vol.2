@@ -707,12 +707,6 @@ nav ul li:nth-of-type(6) a {
   }
 }
 
-@media (max-width: 380px) {
-  .second-image div h1 {
-    font-size: 60px;
-  }
-}
-
 .second-image div p {
   font-size: 50px;
   color: #fff;

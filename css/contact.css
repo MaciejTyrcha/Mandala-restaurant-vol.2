@@ -224,6 +224,12 @@ nav ul li:nth-of-type(6) a {
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .first-image {
+    background-position: 40% center;
+  }
+}
+
 .first-image div {
   position: absolute;
   top: 30%;
@@ -232,6 +238,31 @@ nav ul li:nth-of-type(6) a {
           transform: translate(0, -50%);
   color: #fff;
   padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1520px) {
+  .first-image div {
+    left: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first-image div {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .first-image div {
+    width: 100%;
+  }
 }
 
 .first-image div h1 {
@@ -240,11 +271,88 @@ nav ul li:nth-of-type(6) a {
   font-family: 'Indie Flower', cursive;
 }
 
+@media (max-width: 1660px) {
+  .first-image div h1 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-image div h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 780px) {
+  .first-image div h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-image div h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 440px) {
+  .first-image div h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 379px) {
+  .first-image div h1 {
+    font-size: 40px;
+  }
+}
+
 .first-image div p {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1660px) {
+  .first-image div p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-image div p {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 780px) {
+  .first-image div p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .first-image div p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-image div p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  .first-image div p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 379px) {
+  .first-image div p {
+    font-size: 16px;
+  }
 }
 
 .top-section {
@@ -425,6 +533,31 @@ nav ul li:nth-of-type(6) a {
           transform: translate(0, -50%);
   color: #fff;
   padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1520px) {
+  .second-image div {
+    left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .second-image div {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .second-image div {
+    width: 100%;
+  }
 }
 
 .second-image div h1 {
@@ -433,11 +566,64 @@ nav ul li:nth-of-type(6) a {
   font-family: 'Indie Flower', cursive;
 }
 
+@media (max-width: 1660px) {
+  .second-image div h1 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .second-image div h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 780px) {
+  .second-image div h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .second-image div h1 {
+    font-size: 60px;
+  }
+}
+
 .second-image div p {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1660px) {
+  .second-image div p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .second-image div p {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 780px) {
+  .second-image div p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .second-image div p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .second-image div p {
+    font-size: 20px;
+  }
 }
 
 .bottom-section {

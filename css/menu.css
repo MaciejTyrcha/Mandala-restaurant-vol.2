@@ -377,9 +377,11 @@ section.menu.top-section {
   margin-bottom: 20px;
   text-align: center;
   border-bottom: 2px solid #eeae33;
+  -webkit-box-shadow: 0 4px 0 white, 0 6px 0 #eeae33;
+          box-shadow: 0 4px 0 white, 0 6px 0 #eeae33;
 }
 
-.menu-list ul {
+.menu-list div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,20 +392,14 @@ section.menu.top-section {
   margin-bottom: 40px;
 }
 
-.menu-list ul li button {
-  border: none;
+.menu-list div button {
+  border: 1px solid #eeae33;
+  border-radius: 6px;
   background-color: white;
   color: #333;
   padding: 15px 20px;
   font-size: 25px;
-}
-
-.menu-list ul li button:before {
-  content: '-';
-}
-
-.menu-list ul li button:after {
-  content: '-';
+  cursor: pointer;
 }
 
 .menu-top-section-wrapper {
@@ -445,7 +441,7 @@ section.menu.top-section {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .menu-top-section-wrapper div {

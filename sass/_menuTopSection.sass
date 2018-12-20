@@ -14,22 +14,20 @@ section.menu.top-section
     margin-bottom: 20px
     text-align: center
     border-bottom: 2px solid $font-orange
-  ul 
+    box-shadow: 0 4px 0 white, 0 6px 0 $font-orange
+  div 
     display: flex
     list-style: none
     justify-content: space-between
-    margin-bottom: 40px
-    li 
-      button
-        border: none
-        background-color: white
-        color: #333
-        padding: 15px 20px
-        font-size: 25px
-        &:before 
-          content: '-'
-        &:after
-          content: '-'
+    margin-bottom: 40px 
+    button
+      border: 1px solid $font-orange
+      border-radius: 6px
+      background-color: white
+      color: #333
+      padding: 15px 20px
+      font-size: 25px
+      cursor: pointer
 .menu-top-section-wrapper
   display: flex
   flex-direction: column
@@ -47,7 +45,7 @@ section.menu.top-section
     text-transform: uppercase
     font-size: 40px
     letter-spacing: 4px
-    margin-bottom: 20px
+    margin-bottom: 10px
   div
     margin: 20px 0
     flex-basis: 20%

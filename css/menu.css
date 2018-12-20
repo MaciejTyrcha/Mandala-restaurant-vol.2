@@ -224,6 +224,12 @@ nav ul li:nth-of-type(6) a {
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .first-image {
+    background-position: 20% center;
+  }
+}
+
 .first-image div {
   position: absolute;
   top: 45%;
@@ -232,6 +238,31 @@ nav ul li:nth-of-type(6) a {
           transform: translate(0, -50%);
   color: #fff;
   padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1520px) {
+  .first-image div {
+    left: 45%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first-image div {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .first-image div {
+    width: 100%;
+  }
 }
 
 .first-image div h1 {
@@ -240,10 +271,82 @@ nav ul li:nth-of-type(6) a {
   font-family: 'Indie Flower', cursive;
 }
 
+@media (max-width: 1660px) {
+  .first-image div h1 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-image div h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 780px) {
+  .first-image div h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 470px) {
+  .first-image div h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 440px) {
+  .first-image div h1 {
+    font-size: 50px;
+  }
+}
+
 .first-image div p {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media (max-width: 1660px) {
+  .first-image div p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-image div p {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 780px) {
+  .first-image div p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 590px) {
+  .first-image div p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 490px) {
+  .first-image div p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 470px) {
+  .first-image div p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .first-image div p {
+    font-size: 14px;
+  }
 }
 
 section.menu.top-section {
@@ -351,41 +454,50 @@ section.menu.top-section {
       flex-basis: 20%;
   max-height: 500px;
   width: 100%;
+  position: relative;
 }
 
 .menu-top-section-wrapper div h2 {
   color: #eeae33;
   font-weight: 100;
+  font-size: 22px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: roboto, san-serif;
 }
 
 .menu-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 10px;
+  width: 100%;
 }
 
-.menu-products p {
-  font-size: 19px;
+.menu-products td {
+  vertical-align: bottom;
+}
+
+.menu-products td:first-child {
+  text-align: left;
+  font-size: 16px;
   letter-spacing: 1px;
   font-style: italic;
+  overflow: hidden;
+  position: relative;
 }
 
-.menu-products span {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-bottom: 2px dotted black;
+.menu-products td:first-child:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  margin-left: 15px;
+  width: 1500px;
+  height: 0px;
+  border-bottom: 2px dotted #666;
 }
 
-.menu-products h3 {
+.menu-products td:last-child {
   font-size: 22px;
+  font-weight: 700;
+  text-align: right;
+  width: 80px;
 }
 
 footer {

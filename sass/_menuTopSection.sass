@@ -53,25 +53,43 @@ section.menu.top-section
     flex-basis: 20%
     max-height: 500px
     width: 100%
+    position: relative
     h2 
       color: $font-orange
       font-weight: 100
+      font-size: 22px
       letter-spacing: 3px
       text-transform: uppercase
       font-family: roboto, san-serif
-.menu-products
-  display: flex
-  align-items: flex-end
-  margin-top: 10px
-  p 
-    font-size: 19px
-    letter-spacing: 1px
-    font-style: italic
-  span 
-    flex: 1
-    border-bottom: 2px dotted black
-  h3 
-    font-size: 22px
+.menu-products 
+  width: 100%
+  td 
+    vertical-align: bottom
+    &:first-child 
+      text-align: left
+      font-size: 16px
+      letter-spacing: 1px
+      font-style: italic
+      overflow: hidden
+      position: relative
+      &:after 
+        content: ''
+        position: absolute
+        bottom: 0
+        margin-left: 15px
+        width: 1500px
+        height: 0px
+        border-bottom: 2px dotted #666
+    &:last-child 
+      font-size: 22px
+      font-weight: 700
+      text-align: right
+      width: 80px
+
+
+
+
+
 
 
         

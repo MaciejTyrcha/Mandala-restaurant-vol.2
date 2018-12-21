@@ -683,7 +683,7 @@ footer {
 
 @media (max-width: 850px) {
   footer {
-    padding: 50px 0 0 0;
+    padding: 20px 5px 0 10px;
   }
 }
 
@@ -711,9 +711,9 @@ footer {
 
 @media (max-width: 640px) {
   .footer-wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 

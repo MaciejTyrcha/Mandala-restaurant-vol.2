@@ -349,7 +349,7 @@ nav ul li:nth-of-type(6) a {
   }
 }
 
-section.menu.top-section {
+.top-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@ section.menu.top-section {
 }
 
 @media (max-width: 600px) {
-  section.menu.top-section {
+  .top-section {
     padding: 20px 20px;
   }
 }

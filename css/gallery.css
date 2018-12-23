@@ -353,7 +353,7 @@ nav ul li:nth-of-type(6) a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  min-height: 150vh;
   margin: 50px 3vh;
 }
 
@@ -366,66 +366,249 @@ nav ul li:nth-of-type(6) a {
       grid-template-columns: repeat(8, 1fr);
   grid-gap: 20px;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 
-.images-top-section {
-  background-color: green;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.images-top-section.first-image-top {
+.first-image-top {
   grid-area: span 2 / span 4;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.second-image-top {
+.first-image-top div {
+  background: url("../Rysunki/gallery/1gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.first-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.second-image-top {
   grid-area: span 3 / span 4;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.third-image-top {
+.second-image-top div {
+  background: url("../Rysunki/gallery/2gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.second-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.third-image-top {
   grid-area: span 4 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.fourth-image-top {
+.third-image-top div {
+  background: url("../Rysunki/gallery/3gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.third-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.fourth-image-top {
   grid-area: span 1 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.fifth-image-top {
+.fourth-image-top div {
+  background: url("../Rysunki/gallery/4gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.fourth-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.fifth-image-top {
   grid-area: span 3 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.sixth-image-top {
+.fifth-image-top div {
+  background: url("../Rysunki/gallery/5gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.fifth-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.sixth-image-top {
   grid-area: span 1 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.seventh-image-top {
+.sixth-image-top div {
+  background: url("../Rysunki/gallery/6gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.sixth-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.seventh-image-top {
   grid-area: span 2 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.eight-image-top {
+.seventh-image-top div {
+  background: url("../Rysunki/gallery/7gallery1280.jpg");
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.seventh-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.eight-image-top {
   grid-area: span 2 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.nineth-image-top {
+.eight-image-top div {
+  background: url("../Rysunki/gallery/8gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.eight-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.nineth-image-top {
   grid-area: span 3 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.tenth-image-top {
+.nineth-image-top div {
+  background: url("../Rysunki/gallery/9gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.nineth-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.tenth-image-top {
   grid-area: span 2 / span 2;
+  background-color: black;
+  overflow: hidden;
 }
 
-.images-top-section.eleventh-image-top {
+.tenth-image-top div {
+  background: url("../Rysunki/gallery/10gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.tenth-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.eleventh-image-top {
   grid-area: span 2 / span 4;
+  background-color: black;
+  overflow: hidden;
+}
+
+.eleventh-image-top div {
+  background: url("../Rysunki/gallery/11gallery1280.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.eleventh-image-top div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
 }
 
 footer {

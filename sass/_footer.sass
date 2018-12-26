@@ -47,22 +47,23 @@ footer
   ul
     list-style: none
     li 
-      opacity: 0.4
       margin: 20px 0
       @media (max-width: 760px)
         margin: 15px 0 
     a 
       text-decoration: none
-      color: #ddd
+      color: #666
+      transition: 0.3s linear
+      &:hover 
+        color: #ddd
 .footer-address
   display: grid
   grid-template-columns: 2fr 20fr 
   grid-template-rows: 1fr 1fr 1fr
   font-size: 16px
-  opacity: 0.4
-  color: #ddd
   p 
     margin: 12px 0
+    color: #666
     @media (max-width: 1480px)
       font-size: 14px
     @media (max-width: 1360px)
@@ -96,9 +97,10 @@ footer
     font-size: 12px
   li
     padding: 0 0 10px 0
-    border-bottom: 2px dotted #777
+    border-bottom: 2px dotted #333
   span 
     margin-right: 10px
+
 .footer-open-time 
   span
     display: flex
@@ -117,6 +119,7 @@ footer
       font-size: 14px
   p 
     font-size: 18px
+    color: #666
     @media (max-width: 1480px)
       font-size: 16px
     @media (max-width: 1360px)
@@ -146,7 +149,7 @@ footer
   padding: 15px 0
   h1
     position: absolute
-    color: #777
+    color: #666
     font-size: 18px
     top: 5%
     @media (max-width: 1480px)
@@ -160,6 +163,12 @@ footer
     position: absolute
     top: 5%
     right: 0%
+    a 
+      text-decoration: none
+      color: #666 
+      transition: 0.3s linear
+      &:hover 
+        color: #ddd
   p 
     margin-left: 10px
     font-size: 18px

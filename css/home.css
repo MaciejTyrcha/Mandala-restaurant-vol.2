@@ -1090,7 +1090,6 @@ footer {
 }
 
 .footer-wrapper ul li {
-  opacity: 0.4;
   margin: 20px 0;
 }
 
@@ -1102,6 +1101,12 @@ footer {
 
 .footer-wrapper ul a {
   text-decoration: none;
+  color: #666;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.footer-wrapper ul a:hover {
   color: #ddd;
 }
 
@@ -1113,12 +1118,11 @@ footer {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   font-size: 16px;
-  opacity: 0.4;
-  color: #ddd;
 }
 
 .footer-address p {
   margin: 12px 0;
+  color: #666;
 }
 
 @media (max-width: 1480px) {
@@ -1212,7 +1216,7 @@ footer {
 
 .footer-links li {
   padding: 0 0 10px 0;
-  border-bottom: 2px dotted #777;
+  border-bottom: 2px dotted #333;
 }
 
 .footer-links span {
@@ -1260,6 +1264,7 @@ footer {
 
 .footer-open-time p {
   font-size: 18px;
+  color: #666;
 }
 
 @media (max-width: 1480px) {
@@ -1335,7 +1340,7 @@ footer {
 
 .footer-copyrights h1 {
   position: absolute;
-  color: #777;
+  color: #666;
   font-size: 18px;
   top: 5%;
 }
@@ -1365,6 +1370,17 @@ footer {
   position: absolute;
   top: 5%;
   right: 0%;
+}
+
+.footer-copyrights span a {
+  text-decoration: none;
+  color: #666;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.footer-copyrights span a:hover {
+  color: #ddd;
 }
 
 .footer-copyrights p {

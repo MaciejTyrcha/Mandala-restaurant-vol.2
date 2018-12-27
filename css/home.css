@@ -30,6 +30,7 @@ header {
       justify-content: space-around;
   padding: 0 5vh;
   height: 150px;
+  width: 100%;
 }
 
 @media (max-width: 1360px) {
@@ -430,6 +431,13 @@ nav ul li:nth-of-type(6) a {
   padding: 15px 60px;
   background-color: #eeae33;
   font-size: 30px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.top-section article a:hover {
+  background-color: #855c0b;
+  color: #ddd;
 }
 
 @media (max-width: 1170px) {
@@ -759,6 +767,13 @@ nav ul li:nth-of-type(6) a {
   background-color: #eeae33;
   font-size: 30px;
   margin-top: 40px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.bottom-section a:hover {
+  background-color: #855c0b;
+  color: #ddd;
 }
 
 @media (max-width: 1170px) {

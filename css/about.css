@@ -612,7 +612,13 @@ nav ul li:nth-of-type(6) a {
   padding: 15px 60px;
   background-color: #eeae33;
   font-size: 30px;
+  border-radius: 5px;
   margin-top: 40px;
+}
+
+.about-content a:hover {
+  background-color: #855c0b;
+  color: #ddd;
 }
 
 @media (max-width: 1360px) {

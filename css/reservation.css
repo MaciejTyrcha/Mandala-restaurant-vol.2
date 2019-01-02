@@ -516,6 +516,14 @@ nav ul li:nth-of-type(6) a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border-radius: 5px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.form button:hover {
+  background-color: #855c0b;
+  color: #ddd;
 }
 
 @media (max-width: 1360px) {

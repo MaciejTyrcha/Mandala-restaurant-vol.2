@@ -499,25 +499,25 @@ nav ul li:nth-of-type(6) a {
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
   background-color: black;
-  max-height: 300px;
   overflow: hidden;
+  max-height: 390px;
 }
 
-@media (max-width: 1435px) {
+@media (max-width: 1760px) {
   .top-section-wrapper .top-section-image {
-    max-height: 270px;
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .top-section-wrapper .top-section-image {
+    max-height: 310px;
   }
 }
 
 @media (max-width: 1170px) {
   .top-section-wrapper .top-section-image {
     min-height: 600px;
-  }
-}
-
-@media (max-width: 750px) {
-  .top-section-wrapper .top-section-image {
-    width: auto;
   }
 }
 
@@ -528,10 +528,8 @@ nav ul li:nth-of-type(6) a {
 }
 
 .top-section-wrapper .top-section-image div {
-  background-position: center;
   width: 100%;
   height: 100%;
-  background-size: cover;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -544,14 +542,23 @@ nav ul li:nth-of-type(6) a {
 
 .top-section-wrapper .top-section-image .image1 {
   background: url("../Rysunki/head/HeadTop1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .top-section-wrapper .top-section-image .image2 {
   background: url("../Rysunki/head/HeadTop2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .top-section-wrapper .top-section-image .image3 {
   background: url("../Rysunki/head/HeadTop3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 1170px) {

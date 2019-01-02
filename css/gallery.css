@@ -358,6 +358,24 @@ nav ul li:nth-of-type(6) a {
   margin: 50px 3vh;
 }
 
+@media (max-width: 960px) {
+  .top-section {
+    margin: 50px 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .top-section {
+    margin: 30px 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .top-section {
+    margin: 0;
+  }
+}
+
 .menu-top-section-wrapper {
   display: -ms-grid;
   display: grid;
@@ -370,10 +388,45 @@ nav ul li:nth-of-type(6) a {
   width: 90%;
 }
 
+@media (max-width: 880px) {
+  .menu-top-section-wrapper {
+    -ms-grid-rows: (1fr)[28];
+        grid-template-rows: repeat(28, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-top-section-wrapper {
+    -ms-grid-rows: (1fr)[22];
+        grid-template-rows: repeat(22, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    width: 100%;
+  }
+}
+
 .first-image-top {
   grid-area: span 2 / span 4;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .first-image-top {
+    grid-area: span 4 / span 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .first-image-top {
+    grid-area: span 2 / span 1;
+    min-height: 400px;
+  }
 }
 
 .first-image-top div {
@@ -398,12 +451,24 @@ nav ul li:nth-of-type(6) a {
   overflow: hidden;
 }
 
+@media (max-width: 880px) {
+  .second-image-top {
+    grid-area: span 6 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .second-image-top {
+    grid-area: span 2 / span 1;
+  }
+}
+
 .second-image-top div {
   background: url("../Rysunki/gallery/2gallery1280.jpg");
   width: 100%;
   height: 100%;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -418,6 +483,18 @@ nav ul li:nth-of-type(6) a {
   grid-area: span 4 / span 2;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .third-image-top {
+    grid-area: span 6 / span 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .third-image-top {
+    grid-area: span 2 / span 1;
+  }
 }
 
 .third-image-top div {
@@ -442,6 +519,18 @@ nav ul li:nth-of-type(6) a {
   overflow: hidden;
 }
 
+@media (max-width: 880px) {
+  .fourth-image-top {
+    grid-area: span 4 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .fourth-image-top {
+    grid-area: span 2 / span 1;
+  }
+}
+
 .fourth-image-top div {
   background: url("../Rysunki/gallery/4gallery1280.jpg");
   width: 100%;
@@ -462,6 +551,18 @@ nav ul li:nth-of-type(6) a {
   grid-area: span 3 / span 2;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .fifth-image-top {
+    grid-area: span 6 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .fifth-image-top {
+    grid-area: span 2 / span 1;
+  }
 }
 
 .fifth-image-top div {
@@ -486,6 +587,18 @@ nav ul li:nth-of-type(6) a {
   overflow: hidden;
 }
 
+@media (max-width: 880px) {
+  .sixth-image-top {
+    grid-area: span 4 / span 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .sixth-image-top {
+    grid-area: span 2 / span 1;
+  }
+}
+
 .sixth-image-top div {
   background: url("../Rysunki/gallery/6gallery1280.jpg");
   width: 100%;
@@ -506,6 +619,18 @@ nav ul li:nth-of-type(6) a {
   grid-area: span 2 / span 2;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .seventh-image-top {
+    grid-area: span 6 / span 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .seventh-image-top {
+    grid-area: span 2 / span 1;
+  }
 }
 
 .seventh-image-top div {
@@ -530,6 +655,18 @@ nav ul li:nth-of-type(6) a {
   overflow: hidden;
 }
 
+@media (max-width: 880px) {
+  .eight-image-top {
+    grid-area: span 4 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .eight-image-top {
+    grid-area: span 2 / span 1;
+  }
+}
+
 .eight-image-top div {
   background: url("../Rysunki/gallery/8gallery1280.jpg");
   width: 100%;
@@ -550,6 +687,18 @@ nav ul li:nth-of-type(6) a {
   grid-area: span 3 / span 2;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .nineth-image-top {
+    grid-area: span 4 / span 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .nineth-image-top {
+    grid-area: span 2 / span 1;
+  }
 }
 
 .nineth-image-top div {
@@ -574,6 +723,18 @@ nav ul li:nth-of-type(6) a {
   overflow: hidden;
 }
 
+@media (max-width: 880px) {
+  .tenth-image-top {
+    grid-area: span 4 / span 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .tenth-image-top {
+    grid-area: span 2 / span 1;
+  }
+}
+
 .tenth-image-top div {
   background: url("../Rysunki/gallery/10gallery1280.jpg");
   width: 100%;
@@ -594,6 +755,18 @@ nav ul li:nth-of-type(6) a {
   grid-area: span 2 / span 4;
   background-color: black;
   overflow: hidden;
+}
+
+@media (max-width: 880px) {
+  .eleventh-image-top {
+    grid-area: span 4 / span 5;
+  }
+}
+
+@media (max-width: 450px) {
+  .eleventh-image-top {
+    grid-area: span 2 / span 1;
+  }
 }
 
 .eleventh-image-top div {

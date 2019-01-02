@@ -78,16 +78,37 @@
 .second-grid
   grid-area: secondGrid
   background: url('../Rysunki/head/HeadTop3.jpeg')
+  background-attachment: fixed
+  background-size: cover
+  border-radius: 0 0 0 80px
+  @media (max-width: 1170px)
+    border-radius: 0 0 0 40px
+  @media (max-width: 750px)
+    border-radius: 0
 .third-grid
   grid-area: thirdGrid
 .fourth-grid
-  grid-area: fourthGrid
+  grid-area: fourthGrid 
   background: url('../Rysunki/about/aboutTopSection640.jpeg')
+  background-attachment: fixed
+  background-size: cover
+  border-radius: 0 80px 80px 0
+  @media (max-width: 1170px)
+    border-radius: 0 40px 40px 0
+  @media (max-width: 750px)
+    border-radius: 0
 .fifth-grid
   grid-area: fifthGrid
 .sixth-grid
   grid-area: sixthGrid
   background: url('../Rysunki/about/aboutTopSection3-640.jpeg')
+  background-attachment: fixed
+  background-size: cover
+  border-radius: 80px 0 0 0
+  @media (max-width: 1170px)
+    border-radius: 40px 0 0 0
+  @media (max-width: 750px)
+    border-radius: 0
 .about-content
   display: flex
   flex-direction: column

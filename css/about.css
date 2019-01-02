@@ -408,6 +408,21 @@ nav ul li:nth-of-type(6) a {
   -ms-grid-column: 2;
   grid-area: secondGrid;
   background: url("../Rysunki/head/HeadTop3.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0 0 0 80px;
+}
+
+@media (max-width: 1170px) {
+  .second-grid {
+    border-radius: 0 0 0 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .second-grid {
+    border-radius: 0;
+  }
 }
 
 .third-grid {
@@ -421,6 +436,21 @@ nav ul li:nth-of-type(6) a {
   -ms-grid-column: 1;
   grid-area: fourthGrid;
   background: url("../Rysunki/about/aboutTopSection640.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0 80px 80px 0;
+}
+
+@media (max-width: 1170px) {
+  .fourth-grid {
+    border-radius: 0 40px 40px 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .fourth-grid {
+    border-radius: 0;
+  }
 }
 
 .fifth-grid {
@@ -434,6 +464,21 @@ nav ul li:nth-of-type(6) a {
   -ms-grid-column: 2;
   grid-area: sixthGrid;
   background: url("../Rysunki/about/aboutTopSection3-640.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 80px 0 0 0;
+}
+
+@media (max-width: 1170px) {
+  .sixth-grid {
+    border-radius: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .sixth-grid {
+    border-radius: 0;
+  }
 }
 
 .about-content {

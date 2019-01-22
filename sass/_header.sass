@@ -16,9 +16,16 @@ header
     padding: 0 0
     height: 70px
   @media (max-width: 670px)
-    padding: 0 0    
+    padding: 0 0
   @media (max-width: 640px)
-    display: none
+    position: fixed
+    flex-direction: column
+    height: 450px
+    background-color: transparent
+    z-index: 2
+    align-items: flex-end
+    justify-content: flex-start
+    padding: 20px 20px 0 0
   div 
     display: flex
     background-repeat: no-repeat
@@ -52,12 +59,19 @@ header
           font-size: 18px
         @media (max-width: 1170px)
           font-size: 14px
-nav 
+nav
   display: flex
   align-items: center
+  @media (max-width: 640px)
+    order: 2
   ul 
     display: flex
     list-style: none
+    @media (max-width: 640px)
+      flex-direction: column
+      background-color: #fff
+      width: 300px
+      border: 2px solid black
     li a 
       display: block
       text-decoration: none
@@ -80,5 +94,100 @@ nav
         font-size: 16px
       @media (max-width: 750px)
         font-size: 14px
+      @media (max-width: 640px)
+        margin: 0 auto
+        width: 90%
+        font-size: 20px
+        color: black
+        text-transform: uppercase
+        border: none
+        border-bottom: 2px solid $font-orange
     li:nth-of-type(6) a 
       border-right: none
+      @media (max-width: 640px)
+        border-bottom: none
+.site-nav
+  @media (max-width: 640px)
+    clip-path: circle(0px at top right)
+    transition: clip-path ease-in-out 400ms
+.open 
+  clip-path: circle(150% at top right)
+.hamburgerMenu 
+  display: none
+  position: absolute
+  height: 60px
+  width: 60px
+  background-color: $font-orange
+  border-radius: 5px
+  position: relative
+  opacity: 0.9
+  &:hover 
+    cursor: pointer
+  @media (max-width: 640px)
+    display: block
+    order: 1 
+  // .fas 
+  //   display: none
+  // .fa-times 
+  //   display: none
+  //   position: absolute
+  //   font-size: 65px
+  //   top: 50%
+  //   left: 50%
+  //   transform: translate(-50%, -50%)
+  //   text-align: center
+.hamburger 
+  display: none
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  height: 40px
+  width: 40px
+  background-color: transparent
+  border: 0
+  border-top: 5px solid #333
+  border-radius: 2px
+  &:hover::before 
+    width: 75%
+  &:hover::after
+    width: 55%
+  &:before, &:after 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    border-top: 5px solid #333
+    transform: translateY(13px)
+    border-radius: 2px
+    transition: 0.3s linear
+  &:after 
+    transform: translateY(30px)
+.rotatedHamburger 
+  display: none
+  position: absolute
+  top: 0%
+  left: 0%
+  // transform: rotate(45deg)
+  height: 40px
+  width: 40px
+  background-color: transparent
+  border: 0
+  border-top: 5px solid blue
+  border-radius: 2px
+  &:before 
+    content: ''
+    position: absolute
+    // transform: rotate(90deg)
+    top: 0
+    left: 0
+    width: 100%
+    border-top: 5px solid red
+    border-radius: 2px
+.show 
+  display: block
+
+
+
+

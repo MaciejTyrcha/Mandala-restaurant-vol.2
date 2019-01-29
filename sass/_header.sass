@@ -10,28 +10,21 @@ header
     height: 130px
   @media (max-width: 1170px)
     height: 100px
-  @media (max-width: 880px)
-    height: 80px
-  @media (max-width: 750px)
-    padding: 0 0
-    height: 70px
-  @media (max-width: 670px)
-    padding: 0 0
-  @media (max-width: 640px)
+  @media (max-width: 900px)
     position: fixed
     flex-direction: column
-    height: 450px
-    background-color: transparent
-    z-index: 2
     align-items: flex-end
     justify-content: flex-start
-    padding: 20px 20px 0 0
-  div 
+    height: 0
+    z-index: 1
+    padding: 0
+  .logoHeader
     display: flex
     background-repeat: no-repeat
     background-size: auto 100%
     background-position: center
     height: 80%
+    background-color: #fff
     align-items: center
     justify-content: center
     @media (max-width: 1020px)
@@ -59,134 +52,123 @@ header
           font-size: 18px
         @media (max-width: 1170px)
           font-size: 14px
-nav
-  display: flex
-  align-items: center
-  @media (max-width: 640px)
-    order: 2
-  ul 
+  nav
     display: flex
-    list-style: none
-    @media (max-width: 640px)
-      flex-direction: column
-      background-color: #fff
-      width: 300px
-      border: 2px solid black
-    li a 
-      display: block
-      text-decoration: none
-      color: #333
-      padding: 15px 20px
-      font-size: 25px
-      border-right: 2px solid $font-orange
-      transition: 0.2s linear
-      &:hover 
-        color: $font-orange
-      @media (max-width: 1360px)
-        font-size: 22px
-      @media (max-width: 1230px)
-        font-size: 20px 
-      @media (max-width: 1170px)
-        font-size: 14px 
-      @media (max-width: 1020px)
-        font-size: 20px 
-      @media (max-width: 880px)
-        font-size: 16px
-      @media (max-width: 750px)
-        font-size: 14px
-      @media (max-width: 640px)
-        margin: 0 auto
-        width: 90%
-        font-size: 20px
-        color: black
-        text-transform: uppercase
-        border: none
-        border-bottom: 2px solid $font-orange
-    li:nth-of-type(6) a 
-      border-right: none
-      @media (max-width: 640px)
-        border-bottom: none
-.site-nav
-  @media (max-width: 640px)
-    clip-path: circle(0px at top right)
-    transition: clip-path ease-in-out 400ms
-.open 
-  clip-path: circle(150% at top right)
-.hamburgerMenu 
-  display: none
-  position: absolute
-  height: 60px
-  width: 60px
-  background-color: $font-orange
-  border-radius: 5px
-  position: relative
-  opacity: 0.9
-  &:hover 
+    align-items: center
+    @media (max-width: 900px)
+      clip-path: circle(0px at top right)
+      transition: clip-path ease-in-out 400ms
+      order: 1
+    ul 
+      display: flex
+      list-style: none
+      @media (max-width: 900px)
+        flex-direction: column
+        background-color: #fff
+        width: 300px
+        border: 2px solid black
+      li a 
+        display: block
+        text-decoration: none
+        color: #333
+        padding: 15px 20px
+        font-size: 25px
+        border-right: 2px solid $font-orange
+        transition: 0.2s linear
+        &:hover 
+          color: $font-orange
+        @media (max-width: 1360px)
+          font-size: 22px
+        @media (max-width: 1230px)
+          font-size: 20px 
+        @media (max-width: 1170px)
+          font-size: 14px 
+        @media (max-width: 1020px)
+          font-size: 20px 
+        @media (max-width: 900px)
+          margin: 0 auto
+          width: 90%
+          font-size: 20px
+          color: black
+          text-transform: uppercase
+          border: none
+          border-bottom: 2px solid $font-orange
+      li:nth-of-type(6) a 
+        border-right: none
+        @media (max-width: 900px)
+          border-bottom: none
+    &.open 
+      clip-path: circle(150% at top right)
+
+  .hamburgerWrapper
+    min-height: 85px
+    width: 85px
+    display: none
     cursor: pointer
-  @media (max-width: 640px)
-    display: block
-    order: 1 
-  // .fas 
-  //   display: none
-  // .fa-times 
-  //   display: none
-  //   position: absolute
-  //   font-size: 65px
-  //   top: 50%
-  //   left: 50%
-  //   transform: translate(-50%, -50%)
-  //   text-align: center
-.hamburger 
-  display: none
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  height: 40px
-  width: 40px
-  background-color: transparent
-  border: 0
-  border-top: 5px solid #333
-  border-radius: 2px
-  &:hover::before 
-    width: 75%
-  &:hover::after
-    width: 55%
-  &:before, &:after 
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    border-top: 5px solid #333
-    transform: translateY(13px)
-    border-radius: 2px
-    transition: 0.3s linear
-  &:after 
-    transform: translateY(30px)
-.rotatedHamburger 
-  display: none
-  position: absolute
-  top: 0%
-  left: 0%
-  // transform: rotate(45deg)
-  height: 40px
-  width: 40px
-  background-color: transparent
-  border: 0
-  border-top: 5px solid blue
-  border-radius: 2px
-  &:before 
-    content: ''
-    position: absolute
-    // transform: rotate(90deg)
-    top: 0
-    left: 0
-    width: 100%
-    border-top: 5px solid red
-    border-radius: 2px
-.show 
-  display: block
+    margin: 15px 15px 0 0
+    border-radius: 50%
+    @media (max-width: 900px)
+      background-color: rgba(0,0,0,0.8)
+      display: flex
+      justify-content: center 
+      align-items: center
+    .hamburgerMenu
+      width: 60px
+      height: 45px
+      position: relative
+      transform: rotate(0deg)
+      transition: 0.5s ease-in-out
+      @media (max-width: 900px)
+        background-color: transparent
+        display: block
+      span 
+        display: block
+        position: absolute
+        height: 4px
+        width: 50%
+        background: white
+        opacity: 1
+        transform: rotate(0deg)
+        transition: 0.25s ease-in-out
+        &:nth-child(even) 
+          left: 50%
+        &:nth-child(odd) 
+          left: 0px
+        &:nth-child(1),
+        &:nth-child(2) 
+          top: 2px
+        &:nth-child(3),
+        &:nth-child(4) 
+          top: 20px
+        &:nth-child(5),
+        &:nth-child(6) 
+          top: 38px
+      .openHamburger
+        &:nth-child(1),
+        &:nth-child(6) 
+          transform: rotate(45deg)
+        &:nth-child(2),
+        &:nth-child(5) 
+          transform: rotate(-45deg)
+        &:nth-child(1) 
+          left: 5px
+          top: 9px
+        &:nth-child(2) 
+          left: calc(50% - 5px)
+          top: 9px
+        &:nth-child(3) 
+          left: -50%
+          opacity: 0
+        &:nth-child(4) 
+          left: 100%
+          opacity: 0
+        &:nth-child(5) 
+          left: 5px
+          top: 31px
+        &:nth-child(6) 
+          left: calc(50% - 5px)
+          top: 31px
+
 
 
 

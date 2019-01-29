@@ -1,7 +1,6 @@
 $('.hamburgerMenu').click(function () {
     $('nav').toggleClass('open', 500);
-    $('.hamburger').toggleClass('show');
-    $('.rotatedHamburger').toggleClass('show');
+    $('.hamburgerMenu span').toggleClass('openHamburger');
 })
 
 // const burger = document.querySelector('.hamburgerMenu');
@@ -11,3 +10,13 @@ $('.hamburgerMenu').click(function () {
 // burger.addEventListener("click", function () {
 
 // })
+
+// const openCloseNav = () => {
+//     const navSection = document.querySelector("nav");
+//     const spanHamburger = document.querySelectorAll(".hamburger span");
+    
+//     navSection.classList.toggle("active");
+//     spanHamburger.forEach((span) => span.classList.toggle("openHamburger"));
+    
+//     }
+//     hamburgerMenu.addEventListener("click", openCloseNav);

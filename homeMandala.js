@@ -1,6 +1,7 @@
 $('.hamburgerMenu').click(function () {
-    $('nav').toggleClass('open', 500);
+    $('nav').toggleClass('open');
     $('.hamburgerMenu span').toggleClass('openHamburger');
+    $('.hamburgerWrapper').toggleClass('hamburgerWrapperOpen');
 })
 
 // const burger = document.querySelector('.hamburgerMenu');

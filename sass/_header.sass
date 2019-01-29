@@ -11,12 +11,10 @@ header
   @media (max-width: 1170px)
     height: 100px
   @media (max-width: 900px)
-    position: fixed
     flex-direction: column
     align-items: flex-end
     justify-content: flex-start
     height: 0
-    z-index: 1
     padding: 0
   .logoHeader
     display: flex
@@ -57,16 +55,20 @@ header
     align-items: center
     @media (max-width: 900px)
       clip-path: circle(0px at top right)
+      width: 100%
       transition: clip-path ease-in-out 400ms
+      position: fixed
       order: 1
+      z-index: 2
     ul 
       display: flex
       list-style: none
       @media (max-width: 900px)
         flex-direction: column
         background-color: #fff
-        width: 300px
+        width: 100%
         border: 2px solid black
+        padding-right: 40px
       li a 
         display: block
         text-decoration: none
@@ -86,6 +88,7 @@ header
         @media (max-width: 1020px)
           font-size: 20px 
         @media (max-width: 900px)
+          text-align: center
           margin: 0 auto
           width: 90%
           font-size: 20px
@@ -112,6 +115,12 @@ header
       display: flex
       justify-content: center 
       align-items: center
+      position: fixed
+      z-index: 3
+    @media (max-width: 700px)
+      min-height: 65px
+      width: 65px
+      margin: 5px 5px 0 0
     .hamburgerMenu
       width: 60px
       height: 45px
@@ -121,6 +130,9 @@ header
       @media (max-width: 900px)
         background-color: transparent
         display: block
+      @media (max-width: 700px)
+        width: 50px 
+        height: 35px
       span 
         display: block
         position: absolute
@@ -130,6 +142,8 @@ header
         opacity: 1
         transform: rotate(0deg)
         transition: 0.25s ease-in-out
+        @media (max-width: 700px)
+          height: 3px
         &:nth-child(even) 
           left: 50%
         &:nth-child(odd) 
@@ -137,12 +151,18 @@ header
         &:nth-child(1),
         &:nth-child(2) 
           top: 2px
+          @media (max-width: 700px)
+            top: 1px
         &:nth-child(3),
         &:nth-child(4) 
           top: 20px
+          @media (max-width: 700px)
+            top: 16px
         &:nth-child(5),
         &:nth-child(6) 
           top: 38px
+          @media (max-width: 700px)
+            top: 31px
       .openHamburger
         &:nth-child(1),
         &:nth-child(6) 
@@ -165,9 +185,13 @@ header
         &:nth-child(5) 
           left: 5px
           top: 31px
+          @media (max-width: 700px)
+            top: 24px
         &:nth-child(6) 
           left: calc(50% - 5px)
           top: 31px
+          @media (max-width: 700px)
+            top: 24px
 
 
 

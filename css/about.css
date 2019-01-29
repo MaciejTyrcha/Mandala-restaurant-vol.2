@@ -47,7 +47,6 @@ header {
 
 @media (max-width: 900px) {
   header {
-    position: fixed;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -59,7 +58,6 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 0;
-    z-index: 1;
     padding: 0;
   }
 }
@@ -152,13 +150,16 @@ header nav {
   header nav {
     -webkit-clip-path: circle(0px at top right);
             clip-path: circle(0px at top right);
+    width: 100%;
     -webkit-transition: -webkit-clip-path ease-in-out 400ms;
     transition: -webkit-clip-path ease-in-out 400ms;
     transition: clip-path ease-in-out 400ms;
     transition: clip-path ease-in-out 400ms, -webkit-clip-path ease-in-out 400ms;
+    position: fixed;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    z-index: 2;
   }
 }
 
@@ -176,8 +177,9 @@ header nav ul {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #fff;
-    width: 300px;
+    width: 100%;
     border: 2px solid black;
+    padding-right: 40px;
   }
 }
 
@@ -222,6 +224,7 @@ header nav ul li a:hover {
 
 @media (max-width: 900px) {
   header nav ul li a {
+    text-align: center;
     margin: 0 auto;
     width: 90%;
     font-size: 20px;
@@ -268,6 +271,16 @@ header .hamburgerWrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: fixed;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  header .hamburgerWrapper {
+    min-height: 65px;
+    width: 65px;
+    margin: 5px 5px 0 0;
   }
 }
 
@@ -288,6 +301,13 @@ header .hamburgerWrapper .hamburgerMenu {
   }
 }
 
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu {
+    width: 50px;
+    height: 35px;
+  }
+}
+
 header .hamburgerWrapper .hamburgerMenu span {
   display: block;
   position: absolute;
@@ -299,6 +319,12 @@ header .hamburgerWrapper .hamburgerMenu span {
           transform: rotate(0deg);
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu span {
+    height: 3px;
+  }
 }
 
 header .hamburgerWrapper .hamburgerMenu span:nth-child(even) {
@@ -313,12 +339,30 @@ header .hamburgerWrapper .hamburgerMenu span:nth-child(1), header .hamburgerWrap
   top: 2px;
 }
 
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu span:nth-child(1), header .hamburgerWrapper .hamburgerMenu span:nth-child(2) {
+    top: 1px;
+  }
+}
+
 header .hamburgerWrapper .hamburgerMenu span:nth-child(3), header .hamburgerWrapper .hamburgerMenu span:nth-child(4) {
   top: 20px;
 }
 
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu span:nth-child(3), header .hamburgerWrapper .hamburgerMenu span:nth-child(4) {
+    top: 16px;
+  }
+}
+
 header .hamburgerWrapper .hamburgerMenu span:nth-child(5), header .hamburgerWrapper .hamburgerMenu span:nth-child(6) {
   top: 38px;
+}
+
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu span:nth-child(5), header .hamburgerWrapper .hamburgerMenu span:nth-child(6) {
+    top: 31px;
+  }
 }
 
 header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(1), header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(6) {
@@ -356,9 +400,21 @@ header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(5) {
   top: 31px;
 }
 
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(5) {
+    top: 24px;
+  }
+}
+
 header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(6) {
   left: calc(50% - 5px);
   top: 31px;
+}
+
+@media (max-width: 700px) {
+  header .hamburgerWrapper .hamburgerMenu .openHamburger:nth-child(6) {
+    top: 24px;
+  }
 }
 
 .first-image {

@@ -1,22 +1,20 @@
 .first-image
   width: 100% 
   flex-basis: 100vh
-  background: url('../Rysunki/head/HeadFirst1920.jpg')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: left center
+  // background: url('../Rysunki/head/HeadFirst1920.jpg')
+  // background-repeat: no-repeat
+  // background-size: cover
+  // background-position: left center
   position: relative
-  @media (max-width: 459px)
-    background-position: 6% center
+  // @media (max-width: 459px)
+  //   background-position: 6% center
   div 
     position: absolute
     top: 35%
     left: 55%
     transform: translate(0, -50%)
     color: #fff
-    padding: 20px 30px
     @media (max-width: 1100px)
-      background-color: rgba(0, 0, 0, 0.5)
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
@@ -24,11 +22,19 @@
       text-align: center
     @media (max-width: 770px)
       width: 100%
-    section 
+    section
+      display: flex 
+      flex-direction: column 
+      align-items: flex-start
+      width: 100%
+      height: 100%
+      padding: 20px 30px
+      background-color: rgba(0, 0, 0, 0.5)
       transform: translateY(40px)
       opacity: 0
       transition: transform 1s ease-in-out, opacity 0.5s linear
       @media (max-width: 1100px)
+        align-items: center
         transform: translateY(20px)
       &.active
         transform: translateY(0)
@@ -52,13 +58,10 @@
       p 
         opacity: 0.6
         font-size: 18px
-        margin-bottom: 40px
-        @media (max-width: 770px)
-          font-size: 12
-          margin-bottom: 55px
+        margin-bottom: 20px
         @media (max-width: 639px)
           font-size: 16px   
-      a 
+      a
         text-decoration: none
         text-transform: uppercase
         background-color: transparent
@@ -80,4 +83,7 @@
           font-size: 20px
           padding: 18px 50px 
           border: 2px solid #fff
+.parallax-window
+  min-height: 400px
+  background: transparent
   

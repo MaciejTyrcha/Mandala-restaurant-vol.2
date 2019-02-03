@@ -253,12 +253,6 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-height: 600px) {
-  header nav ul li a {
-    font-size: 16px;
-  }
-}
-
 header nav ul li:nth-of-type(6) {
   border-right: none;
 }
@@ -404,17 +398,7 @@ header .hamburgerWrapperOpen {
   width: 100%;
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
-  background: url("../Rysunki/head/HeadFirst1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left center;
   position: relative;
-}
-
-@media (max-width: 459px) {
-  .first-image {
-    background-position: 6% center;
-  }
 }
 
 .first-image div {
@@ -424,12 +408,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   color: #fff;
-  padding: 20px 30px;
 }
 
 @media (max-width: 1100px) {
   .first-image div {
-    background-color: rgba(0, 0, 0, 0.5);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -446,6 +428,20 @@ header .hamburgerWrapperOpen {
 }
 
 .first-image div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
   opacity: 0;
@@ -457,6 +453,9 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 1100px) {
   .first-image div section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
@@ -509,14 +508,7 @@ header .hamburgerWrapperOpen {
 .first-image div section p {
   opacity: 0.6;
   font-size: 18px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 770px) {
-  .first-image div section p {
-    font-size: 12;
-    margin-bottom: 55px;
-  }
+  margin-bottom: 20px;
 }
 
 @media (max-width: 639px) {
@@ -562,6 +554,11 @@ header .hamburgerWrapperOpen {
     padding: 18px 50px;
     border: 2px solid #fff;
   }
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 
 .top-section {

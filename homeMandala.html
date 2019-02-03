@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-<body onload="loadHome.showFirstImageSection()">
+<body onload="loadHome.showFirstImageSection()" onscroll="scrollDivInImage.scroll()">
   <header>
     <div class="logoHeader">
       <img src="/Rysunki/smallLogoMandala.png" alt="">
@@ -40,7 +40,8 @@
     </div>
   </header>
 
-  <section class="home first-image">
+  <section class="home first-image parallax-window" data-parallax="scroll" data-image-src="../Rysunki/head/HeadFirst1920.jpg"
+    data-position="left center">
     <div>
       <section>
         <h1>restauracja mandala</h1>
@@ -49,7 +50,6 @@
         </p>
         <a href="">Rezerwacja</a>
       </section>
-
     </div>
   </section>
 
@@ -228,6 +228,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="parallax.min.js"></script>
   <script src="homeMandala.js"></script>
 </body>
 

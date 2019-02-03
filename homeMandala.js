@@ -43,3 +43,35 @@ class ScrollDivInImage {
 }
 
 const scrollDivInImage = new ScrollDivInImage();
+
+class ScrollTopSection {
+  constructor() {
+    this.scrollValue = 0
+    this.windowheight = 0
+    this.allImages = ""
+    this.allP1 = ""
+    this.allH1 = ""
+    this.allP2 = ""
+    this.allA = ""
+  }
+
+  scrollTopSection() {
+    this.scrollValue = window.scrollY;
+    this.windowheight = window.innerHeight;
+
+    this.allImages = [...document.querySelectorAll(".top-section-image")];
+    this.allP1 = [...document.querySelectorAll(".top-section-content p:nth-of-type(1)")];
+    this.allH1 = [...document.querySelectorAll(".top-section-content h1")];
+    this.allP2 = [...document.querySelectorAll(".top-section-content p:nth-of-type(2)")];
+    this.allA = [...document.querySelectorAll(".top-section a")];
+
+    for (let i=0; i< this.allImages.length; i++) {
+      let allImages = this.allImages[i];
+      if ( this.scrollValue > allImages.offsetTop + allImages.clientHeight - windowHeight) {
+        allImages.classList.add('active');
+      }
+    }
+  }
+}
+
+const scrollTopSection = new ScrollTopSection();

@@ -445,7 +445,30 @@ header .hamburgerWrapperOpen {
   }
 }
 
-.first-image h1 {
+.first-image div section {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  .first-image div section {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+.first-image div section.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.first-image div section h1 {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
@@ -454,55 +477,55 @@ header .hamburgerWrapperOpen {
 }
 
 @media (max-width: 1360px) {
-  .first-image h1 {
+  .first-image div section h1 {
     font-size: 40px;
   }
 }
 
 @media (max-width: 1230px) {
-  .first-image h1 {
+  .first-image div section h1 {
     font-size: 35px;
   }
 }
 
 @media (max-width: 770px) {
-  .first-image h1 {
+  .first-image div section h1 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 639px) {
-  .first-image h1 {
+  .first-image div section h1 {
     font-size: 24px;
   }
 }
 
 @media (max-width: 459px) {
-  .first-image h1 {
+  .first-image div section h1 {
     font-size: 26px;
   }
 }
 
-.first-image p {
+.first-image div section p {
   opacity: 0.6;
   font-size: 18px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 770px) {
-  .first-image p {
+  .first-image div section p {
     font-size: 12;
     margin-bottom: 55px;
   }
 }
 
 @media (max-width: 639px) {
-  .first-image p {
+  .first-image div section p {
     font-size: 16px;
   }
 }
 
-.first-image a {
+.first-image div section a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
@@ -515,26 +538,26 @@ header .hamburgerWrapperOpen {
   transition: 0.2s linear;
 }
 
-.first-image a:hover {
+.first-image div section a:hover {
   background-color: #fff;
   color: black;
 }
 
 @media (max-width: 1230px) {
-  .first-image a {
+  .first-image div section a {
     font-size: 16px;
     padding: 14px 45px;
   }
 }
 
 @media (max-width: 770px) {
-  .first-image a {
+  .first-image div section a {
     font-size: 14px;
   }
 }
 
 @media (max-width: 639px) {
-  .first-image a {
+  .first-image div section a {
     font-size: 20px;
     padding: 18px 50px;
     border: 2px solid #fff;

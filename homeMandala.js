@@ -4,20 +4,15 @@ $('.hamburgerMenu').click(function () {
     $('.hamburgerWrapper').toggleClass('hamburgerWrapperOpen');
 })
 
-// const burger = document.querySelector('.hamburgerMenu');
-// const iconBurger = document.querySelector('.hamburger');
-// const iconX = document.querySelector('.fas.fa-times');
+class OnLoad {
+  constructor() {
+    this.divHomeFirstImage = "";
+  }
 
-// burger.addEventListener("click", function () {
+  showFirstImageSection() {
+    this.divHomeFirstImage = document.querySelector(".first-image div section");
+    this.divHomeFirstImage.classList.add("active");
+  }
+}
 
-// })
-
-// const openCloseNav = () => {
-//     const navSection = document.querySelector("nav");
-//     const spanHamburger = document.querySelectorAll(".hamburger span");
-    
-//     navSection.classList.toggle("active");
-//     spanHamburger.forEach((span) => span.classList.toggle("openHamburger"));
-    
-//     }
-//     hamburgerMenu.addEventListener("click", openCloseNav);
+const loadHome = new OnLoad();

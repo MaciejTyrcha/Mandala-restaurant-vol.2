@@ -701,21 +701,22 @@ header .hamburgerWrapperOpen {
 }
 
 .top-section-wrapper .top-section-image {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
   background-color: black;
   overflow: hidden;
+  min-height: 390px;
   max-height: 390px;
 }
 
 @media (max-width: 1760px) {
   .top-section-wrapper .top-section-image {
+    min-height: 330px;
     max-height: 330px;
   }
 }
 
 @media (max-width: 1440px) {
   .top-section-wrapper .top-section-image {
+    min-height: 310px;
     max-height: 310px;
   }
 }
@@ -723,12 +724,14 @@ header .hamburgerWrapperOpen {
 @media (max-width: 1170px) {
   .top-section-wrapper .top-section-image {
     min-height: 600px;
+    max-height: 600px;
   }
 }
 
 @media (max-width: 375px) {
   .top-section-wrapper .top-section-image {
     min-height: 400px;
+    max-height: 400px;
   }
 }
 

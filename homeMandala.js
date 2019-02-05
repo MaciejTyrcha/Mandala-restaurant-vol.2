@@ -7,16 +7,22 @@ $('.hamburgerMenu').click(function () {
 class MandalaHome {
   constructor() {
     window.addEventListener("load", this.loadElement);
+    window.addEventListener("scroll", this.scrollWeb);
   }
   loadElement() {
-    this.load = new OnLoad();
+    this.load = new OnLoadHome();
     this.load.showFirstImageSection();
+  }
+
+  scrollWeb() {
+    this.scrollTopSectionHome = new ScrollTopSectionHome();
+    this.scrollTopSectionHome.scrollTopSection();
   }
 }
 
 const mandalaHome = new MandalaHome();
 
-class OnLoad {
+class OnLoadHome {
   constructor() {
     this.divHomeFirstImage = ""
   }
@@ -27,36 +33,18 @@ class OnLoad {
   }
 }
 
-const loadHome = new OnLoad();
 
-// class ScrollDivInImage {
+// class ScrollMandalaHome {
 //   constructor() {
-//     this.windowScroll = 0
-//     this.nextSection = ""
-//     this.divContainer = ""
-//     this.innerHeight = 0
-//     this.innerWidth = 0
-//   }
-
-//   scroll() {
-//     this.innerHeight = window.innerHeight;
-//     this.innerWidth = window.innerWidth;
-//     this.windowScroll = window.scrollY;
-//     this.nextSection = document.querySelector(".top-section").offsetTop;
-//     this.divContainer = document.querySelector(".first-image div section");
-
-//     if (this.windowScroll < this.nextSection / 2.15 && this.innerWidth > 1100) {
-//       this.divContainer.style.transform = `translate(0%, ${this.windowScroll / 3}%)`;
-//     }
-//     else if (this.windowScroll < this.nextSection / 3.5 + 25 && this.innerWidth <= 1100) {
-//       this.divContainer.style.transform = `translate(0%, ${this.windowScroll / 3}%)`;
-//     }
+//     this.scrollValue = 0
+//     this.windowHeight = 0
+//     this.windowWidth = 0
 //   }
 // }
 
-// const scrollDivInImage = new ScrollDivInImage();
 
-class ScrollTopSection {
+
+class ScrollTopSectionHome {
   constructor() {
     this.scrollValue = 0
     this.windowHeight = 0
@@ -96,4 +84,20 @@ class ScrollTopSection {
   }
 }
 
-const scrollTopSection = new ScrollTopSection();
+
+class ScrollSecondImageHome{
+  constructor() {
+    this.scrollValue = 0
+    this.windowHeight = 0
+    this.windowWidth = 0
+  }
+}
+
+class ScrollFooter {
+  constructor() {
+    this.scrollValue = 0
+    this.windowHeight = 0
+    this.windowWidth = 0
+  }
+}
+

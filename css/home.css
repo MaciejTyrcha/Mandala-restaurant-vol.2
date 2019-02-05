@@ -558,7 +558,7 @@ header .hamburgerWrapperOpen {
 
 .parallax-window {
   min-height: 400px;
-  background: transparent;
+  background-color: transparent;
 }
 
 .top-section {
@@ -637,8 +637,19 @@ header .hamburgerWrapperOpen {
   background-color: #eeae33;
   font-size: 30px;
   border-radius: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 2s ease-in-out;
+}
+
+.top-section article a.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .top-section article a:hover {
@@ -705,6 +716,19 @@ header .hamburgerWrapperOpen {
   overflow: hidden;
   min-height: 390px;
   max-height: 390px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.5s linear;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+}
+
+.top-section-wrapper .top-section-image.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1760px) {
@@ -805,6 +829,19 @@ header .hamburgerWrapperOpen {
   margin: 20px 0;
   font-size: 18px;
   letter-spacing: 2px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.5s linear;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+}
+
+.top-section-wrapper .top-section-content p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -838,6 +875,19 @@ header .hamburgerWrapperOpen {
   font-style: italic;
   color: #eeae33;
   font-size: 35px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.5s linear;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+}
+
+.top-section-wrapper .top-section-content p:nth-of-type(1).active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -870,6 +920,19 @@ header .hamburgerWrapperOpen {
   text-transform: uppercase;
   font-size: 45px;
   letter-spacing: 4px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.5s linear;
+  transition: transform 2s ease-in-out, opacity 0.5s linear, -webkit-transform 2s ease-in-out;
+}
+
+.top-section-wrapper .top-section-content h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {

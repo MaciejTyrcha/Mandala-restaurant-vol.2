@@ -960,12 +960,7 @@ header .hamburgerWrapperOpen {
 }
 
 .second-image {
-  -ms-flex-preferred-size: 100vh;
-      flex-basis: 100vh;
-  background: url("../Rysunki/head/HeadSecond1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
   position: relative;
 }
 

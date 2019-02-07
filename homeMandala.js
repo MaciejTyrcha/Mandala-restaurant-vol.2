@@ -11,15 +11,21 @@ class MandalaHome {
   }
 
   loadElement() {
+    //Ładowanie pierwszego diva
     this.load = new OnLoadHome();
     this.load.showFirstImageHome();
+
+    //Responsywne wycentrowanie drugiego obrazka 
+    this.homeSecondImageSize = new OnLoadHome();
+    this.homeSecondImageSize.changeSecondImageSize();
   }
 
   scrollWeb() {
-
+    //Scrollowanie diva w pierwszym obrazku
     this.scrollSecondImageHome = new ScrollSecondImageHome();
     this.scrollSecondImageHome.scrollSecondImageHome();
     
+    //Scrollowanie elementów w 1-szej sekcji
     this.scrollTopSectionHome = new ScrollTopSectionHome();
     this.scrollTopSectionHome.scrollTopSection();
   }
@@ -30,14 +36,23 @@ const mandalaHome = new MandalaHome();
 class OnLoadHome {
   constructor() {
     this.divHomeFirstImage = ""
+    this.homeSecondImage = ""
+    this.windowWidth = 0
   }
 
   showFirstImageHome() {
     this.divHomeFirstImage = document.querySelector(".first-image div section");
     this.divHomeFirstImage.classList.add("active");
   }
-}
 
+  changeSecondImageSize() {
+    this.windowWidth = window.innerWidth;
+    this.homeSecondImage = document.querySelector(".second-image");
+    if ( this.windowWidth <= 1000){
+      this.homeSecondImage.dataset.position = "left center";
+    }
+  }
+}
 
 class ScrollMandalaHome {
   constructor() {
@@ -46,8 +61,6 @@ class ScrollMandalaHome {
     this.windowWidth = 0
   }
 }
-
-
 
 class ScrollTopSectionHome {
   constructor() {
@@ -89,7 +102,6 @@ class ScrollTopSectionHome {
   }
 }
 
-
 class ScrollSecondImageHome{
   constructor() {
     this.divHomeSecondImage = ""
@@ -103,7 +115,6 @@ class ScrollSecondImageHome{
       this.scrollValue = window.scrollY;
       this.homeSecondImage = document.querySelector(".second-image");
       this.divHomeSecondImage = document.querySelector(".second-image div section");
-      console.log(`Scroll value: ${this.scrollValue}, offsetTop: ${this.divHomeSecondImage.offsetTop + this.homeSecondImage.offsetTop}, clientHeight: ${this.homeSecondImage.clientHeight}, windowHeight: ${this.windowHeight}`);
 
       if ( this.scrollValue > (this.divHomeSecondImage.offsetTop + this.homeSecondImage.offsetTop)- this.windowHeight / 3) {
         this.divHomeSecondImage.classList.add('active');
@@ -111,6 +122,14 @@ class ScrollSecondImageHome{
   }
 }
 
+class ScrollBottomSectionHome {
+  constructor() {
+    this.scrollValue = 0
+    this.windowHeight = 0
+    this.windowWidth = 0
+
+  }
+}
 // class ScrollFooter {
 //   constructor() {
 //     this.scrollValue = 0

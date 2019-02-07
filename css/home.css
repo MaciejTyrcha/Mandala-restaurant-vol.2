@@ -556,11 +556,6 @@ header .hamburgerWrapperOpen {
   }
 }
 
-.parallax-window {
-  min-height: 400px;
-  background-color: transparent;
-}
-
 .top-section {
   display: -webkit-box;
   display: -ms-flexbox;

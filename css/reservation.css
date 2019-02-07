@@ -1014,6 +1014,19 @@ footer {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 30px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.footer-wrapper div h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -1052,6 +1065,19 @@ footer {
 
 .footer-wrapper ul li {
   margin: 20px 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.footer-wrapper ul li.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 760px) {
@@ -1084,6 +1110,19 @@ footer {
 .footer-address p {
   margin: 12px 0;
   color: #666;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.footer-address p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1480px) {
@@ -1178,6 +1217,19 @@ footer {
 .footer-links li {
   padding: 0 0 10px 0;
   border-bottom: 2px dotted #333;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.footer-links li.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .footer-links span {
@@ -1226,6 +1278,19 @@ footer {
 .footer-open-time p {
   font-size: 18px;
   color: #666;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.footer-open-time p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1480px) {

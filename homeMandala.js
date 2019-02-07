@@ -32,6 +32,10 @@ class MandalaHome {
     //Scrollowanie elementów w 2-giej sekcji 
     this.scrollBottomSectionHome = new ScrollBottomSectionHome();
     this.scrollBottomSectionHome.scrollBottomSection();
+
+    //Scrollowanie elementów z footera 
+    this.scrollFooter = new ScrollFooter(); 
+    this.scrollFooter.scrollFooter();
   }
 }
 
@@ -52,8 +56,12 @@ class OnLoadHome {
   changeSecondImageSize() {
     this.windowWidth = window.innerWidth;
     this.homeSecondImage = document.querySelector(".second-image");
-    if ( this.windowWidth <= 1000){
+    if ( this.windowWidth <= 1000 && this.windowWidth > 600){
       this.homeSecondImage.dataset.position = "left center";
+    }
+
+    if ( this.windowWidth <= 600){
+      this.homeSecondImage.dataset.position = "-200px center";
     }
   }
 }
@@ -71,6 +79,7 @@ class ScrollTopSectionHome {
     this.scrollValue = 0
     this.windowHeight = 0
     this.windowWidth = 0
+    this.allArticles = ""
     this.allImages = ""
     this.allP1 = ""
     this.allH1 = ""
@@ -89,17 +98,36 @@ class ScrollTopSectionHome {
     this.allH1 = [...document.querySelectorAll(".top-section-content h1")];
     this.allP2 = [...document.querySelectorAll(".top-section-content p:nth-of-type(2)")];
     this.allA = [...document.querySelectorAll(".top-section a")];
+    this.allArticles = [...document.querySelectorAll(".top-section article")]
+
+    let articles = this.allArticles.map(articles => articles.offsetTop);
 
     this.wholeContent = [this.allImages, this.allP1, this.allH1, this.allP2, this.allA];
+   
+    if (this.windowWidth > 1170) {
+      for ( let i = 0; i < this.wholeContent.length; i++) {
+        let wholeContent = this.wholeContent[i];
+        for ( let j = 0; j < wholeContent.length; j++) {
+          let wholeContentDeeper = wholeContent[j];
+          if ( this.scrollValue > wholeContentDeeper.offsetTop + wholeContentDeeper.clientHeight - this.windowHeight) {
+            wholeContentDeeper.classList.add('active');
+          }
+        }
+      }
+    }
 
-    for ( let i = 0; i < this.wholeContent.length; i++) {
-      let wholeContent = this.wholeContent[i];
-      // console.log(wholeContent);
-      for ( let j = 0; j < wholeContent.length; j++) {
-        let wholeContentDeeper = wholeContent[j];
-        // console.log(wholeContentDeeper);
-        if ( this.scrollValue > wholeContentDeeper.offsetTop + wholeContentDeeper.clientHeight - this.windowHeight) {
-          wholeContentDeeper.classList.add('active');
+    if (this.windowWidth <= 1170) {
+      for ( let i = 1; i < this.wholeContent.length; i++) {
+        let wholeContent = this.wholeContent[i];
+        
+        let k = 0;
+        for ( let j = 0; j < wholeContent.length; j++) {
+          let wholeContentDeeper = wholeContent[j];
+    
+          if ( this.scrollValue > (wholeContentDeeper.offsetTop + articles[k]) + wholeContentDeeper.clientHeight - this.windowHeight) {
+            wholeContentDeeper.classList.add('active');
+          }
+          k++;
         }
       }
     }
@@ -130,7 +158,6 @@ class ScrollBottomSectionHome {
   constructor() {
     this.scrollValue = 0
     this.windowHeight = 0
-    this.windowWidth = 0
     this.allH1 = ""
     this.allH2 = ""
     this.allP = ""
@@ -141,7 +168,6 @@ class ScrollBottomSectionHome {
   scrollBottomSection () {
     this.scrollValue = window.scrollY;
     this.windowHeight = window.innerHeight;
-    this.windowWidth = window.innerWidth;
 
     this.allH1 = [...document.querySelectorAll(".bottom-section h1")];
     this.allH2 = [...document.querySelectorAll(".bottom-section h2")];
@@ -166,14 +192,35 @@ class ScrollBottomSectionHome {
   }
 }
 
+class ScrollFooter {
+  constructor() {
+    this.scrollValue = 0
+    this.windowHeight = 0
+    this.allH1 = ""
+    this.allP = ""
+    this.allLi = ""
+    this.wholeContent = []
+  }
 
+  scrollFooter() {
+    this.scrollValue = window.scrollY;
+    this.windowHeight = window.innerHeight;
 
+    this.allH1 = [...document.querySelectorAll(".footer-wrapper h1")];
+    this.allP = [...document.querySelectorAll(".footer-wrapper p")];
+    this.allLi = [...document.querySelectorAll(".footer-wrapper li")];
 
-// class ScrollFooter {
-//   constructor() {
-//     this.scrollValue = 0
-//     this.windowHeight = 0
-//     this.windowWidth = 0
-//   }
-// }
+    this.wholeContent = [this.allH1, this.allP, this.allLi];
+
+    for ( let i = 0; i < this.wholeContent.length; i++) {
+      let wholeContent = this.wholeContent[i];
+      for ( let j = 0; j < wholeContent.length; j++) {
+        let wholeContentDeeper = wholeContent[j];
+        if ( this.scrollValue > wholeContentDeeper.offsetTop + wholeContentDeeper.clientHeight - this.windowHeight) {
+          wholeContentDeeper.classList.add('active');
+        }
+      }
+    }
+  }
+}
 

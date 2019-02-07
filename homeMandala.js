@@ -102,10 +102,10 @@ class ScrollSecondImageHome{
       this.windowHeight = window.innerHeight;
       this.scrollValue = window.scrollY;
       this.homeSecondImage = document.querySelector(".second-image");
-      this.divHomeSecondImage = document.querySelector(".second-image div");
-      console.log(`Scroll value: ${this.scrollValue}, offsetTop: ${this.divHomeSecondImage.offsetTop}, clientHeight: ${this.divHomeSecondImage.clientHeight}, windowHeight: ${this.windowHeight}`);
+      this.divHomeSecondImage = document.querySelector(".second-image div section");
+      console.log(`Scroll value: ${this.scrollValue}, offsetTop: ${this.divHomeSecondImage.offsetTop + this.homeSecondImage.offsetTop}, clientHeight: ${this.homeSecondImage.clientHeight}, windowHeight: ${this.windowHeight}`);
 
-      if ( this.scrollValue > (this.divHomeSecondImage.offsetTop + this.homeSecondImage.offsetTop) - this.windowHeight) {
+      if ( this.scrollValue > (this.divHomeSecondImage.offsetTop + this.homeSecondImage.offsetTop)- this.windowHeight / 3) {
         this.divHomeSecondImage.classList.add('active');
       }
   }

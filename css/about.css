@@ -194,6 +194,12 @@ header nav ul li {
   border-right: 2px solid #eeae33;
 }
 
+@media (max-width: 1250px) {
+  header nav ul li {
+    padding: 15px 18px;
+  }
+}
+
 @media (max-width: 900px) {
   header nav ul li {
     text-align: center;
@@ -422,7 +428,6 @@ header .hamburgerWrapperOpen {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 80%;
-    text-align: center;
   }
 }
 
@@ -548,8 +553,14 @@ header .hamburgerWrapperOpen {
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3 1fr);
       grid-template-areas: "firstGrid secondGrid" "fourthGrid thirdGrid" "fifthGrid sixthGrid";
-  padding: 50px 3vh 0 3vh;
+  padding: 70px 3vh 0 3vh;
   min-height: 50vh;
+}
+
+@media (max-width: 1000px) {
+  .top-section {
+    padding: 40px 3vh 0 3vh;
+  }
 }
 
 @media (max-width: 750px) {

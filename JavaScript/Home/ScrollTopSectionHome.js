@@ -26,16 +26,27 @@ class ScrollTopSectionHome {
 
     let articles = this.allArticles.map(articles => articles.offsetTop);
 
-    this.wholeContent = [this.allImages, this.allP1, this.allH1, this.allP2, this.allA];
+    this.wholeContent = [this.allImages, this.allP1, this.allH1, this.allP2];
+
    
+    for ( let i = 0; i < this.allA.length; i++) {
+      let wholeA = this.allA[i];
+      if ( this.scrollValue > wholeA.offsetTop + wholeA.clientHeight - this.windowHeight) {
+        wholeA.classList.add('active');
+      }
+    }
+    
     if (this.windowWidth > 1170) {
       for ( let i = 0; i < this.wholeContent.length; i++) {
         let wholeContent = this.wholeContent[i];
+
+        let k=0;
         for ( let j = 0; j < wholeContent.length; j++) {
           let wholeContentDeeper = wholeContent[j];
-          if ( this.scrollValue > wholeContentDeeper.offsetTop + wholeContentDeeper.clientHeight - this.windowHeight) {
+          if ( this.scrollValue > (wholeContentDeeper.offsetTop +articles[k])+ wholeContentDeeper.clientHeight - this.windowHeight) {
             wholeContentDeeper.classList.add('active');
           }
+          k++;
         }
       }
     }

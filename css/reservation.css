@@ -194,6 +194,12 @@ header nav ul li {
   border-right: 2px solid #eeae33;
 }
 
+@media (max-width: 1250px) {
+  header nav ul li {
+    padding: 15px 18px;
+  }
+}
+
 @media (max-width: 900px) {
   header nav ul li {
     text-align: center;

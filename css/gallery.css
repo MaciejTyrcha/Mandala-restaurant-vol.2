@@ -421,7 +421,6 @@ header .hamburgerWrapperOpen {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 80%;
-    text-align: center;
   }
 }
 
@@ -574,18 +573,18 @@ header .hamburgerWrapperOpen {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 1000px;
-  margin: 50px 3vh;
+  margin: 80px 3vh 50px 3vh;
 }
 
 @media (max-width: 960px) {
   .top-section {
-    margin: 50px 20px;
+    margin: 80px 20px 50px 20px;
   }
 }
 
 @media (max-width: 780px) {
   .top-section {
-    margin: 30px 20px;
+    margin: 60px 20px 30px 20px;
   }
 }
 
@@ -633,6 +632,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 2 / span 4;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.first-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -669,6 +681,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 3 / span 4;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.second-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -703,6 +728,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 4 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.third-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -737,6 +775,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 1 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.fourth-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -771,6 +822,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 3 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.fifth-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -805,6 +869,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 1 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.sixth-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -839,6 +916,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 2 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.seventh-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -873,6 +963,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 2 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.eight-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -907,6 +1010,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 3 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.nineth-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -941,6 +1057,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 2 / span 2;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.tenth-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {
@@ -975,6 +1104,19 @@ header .hamburgerWrapperOpen {
   grid-area: span 2 / span 4;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.eleventh-image-top.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 880px) {

@@ -10,11 +10,11 @@ class MandalaGallery {
     this.load.showFirstImageGallery();
   }
 
-  // scrollWeb() {
-  //   //Scrollowanie elementów w 1-szej sekcji
-  //   this.scrollTopSectionGallery = new ScrollTopSectionGallery();
-  //   this.scrollTopSectionGallery.scrollTopSection();
-  // }
+  scrollWeb() {
+    //Scrollowanie elementów w 1-szej sekcji
+    this.scrollTopSectionGallery = new ScrollTopSectionGallery();
+    this.scrollTopSectionGallery.scrollTopSection();
+  }
 }
 
 const mandalaGallery = new MandalaGallery();

@@ -579,7 +579,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 600px) {
   .top-section {
-    padding: 20px 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -620,6 +620,19 @@ header .hamburgerWrapperOpen {
   margin-bottom: 15px;
   text-align: center;
   border-bottom: 2px solid #eeae33;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.menu-list h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1500px) {
@@ -704,6 +717,19 @@ header .hamburgerWrapperOpen {
   padding: 15px 20px;
   font-size: 25px;
   cursor: pointer;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.menu-list ul li p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1500px) {
@@ -801,6 +827,19 @@ header .hamburgerWrapperOpen {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 4px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.menu-top-section-wrapper h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1500px) {
@@ -833,7 +872,6 @@ header .hamburgerWrapperOpen {
       flex-basis: 20%;
   max-height: 500px;
   width: 100%;
-  position: relative;
 }
 
 @media (max-width: 600px) {
@@ -855,6 +893,19 @@ header .hamburgerWrapperOpen {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: roboto, san-serif;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.menu-top-section-wrapper div h2.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1500px) {
@@ -881,6 +932,19 @@ header .hamburgerWrapperOpen {
 
 .menu-products td {
   vertical-align: bottom;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.menu-products td.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .menu-products td:first-child {

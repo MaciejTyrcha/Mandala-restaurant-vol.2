@@ -1,6 +1,7 @@
 class MandalaAbout {
   constructor() {
     window.addEventListener("load", this.loadElement);
+    window.addEventListener("scroll", this.scrollWeb);
   }
 
   loadElement() {
@@ -8,9 +9,15 @@ class MandalaAbout {
     this.load = new OnLoadAbout();
     this.load.showFirstImageAbout();
 
-     //Responsywne wycentrowanie obrazka
-     this.aboutFirstImageSize = new OnLoadAbout();
-     this.aboutFirstImageSize.changeSize();
+    //Responsywne wycentrowanie obrazka
+    this.aboutFirstImageSize = new OnLoadAbout();
+    this.aboutFirstImageSize.changeSize();
+  }
+
+  scrollWeb() {
+    //Scrollowanie elementów w 1-szej sekcji
+    this.scrollTopSectionAbout = new ScrollTopSectionAbout();
+    this.scrollTopSectionAbout.scrollTopSection();
   }
 }
 

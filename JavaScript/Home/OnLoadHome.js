@@ -13,7 +13,7 @@ class OnLoadHome {
   changeSecondImageSize() {
     this.windowWidth = window.innerWidth;
     this.homeSecondImage = document.querySelector(".second-image");
-    if ( this.windowWidth <= 1000 && this.windowWidth > 600){
+    if (this.windowWidth > 600){
       this.homeSecondImage.dataset.position = "left center";
     }
 

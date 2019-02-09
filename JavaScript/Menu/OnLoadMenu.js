@@ -14,7 +14,7 @@ class OnLoadMenu {
     this.windowWidth = window.innerWidth;
     this.aboutFirstImage = document.querySelector(".first-image");
 
-    if ( this.windowWidth <= 1000 && this.windowWidth > 600){
+    if ( this.windowWidth > 600){
       this.aboutFirstImage.dataset.position = "center";
     }
 

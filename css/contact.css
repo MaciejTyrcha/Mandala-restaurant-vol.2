@@ -587,7 +587,7 @@ header .hamburgerWrapperOpen {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 50px 0;
+  padding: 80px 0 50px 0;
   margin: 0 30vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -615,7 +615,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 380px) {
   .top-section {
-    padding: 30px 0;
+    padding: 40px 0 20px 0;
   }
 }
 
@@ -657,6 +657,19 @@ header .hamburgerWrapperOpen {
   margin-bottom: 20px;
   font-size: 20px;
   padding: 15px 10px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form form input.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -701,6 +714,19 @@ header .hamburgerWrapperOpen {
   font-size: 20px;
   padding: 10px 10px;
   resize: vertical;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form form #textarea.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -743,8 +769,19 @@ header .hamburgerWrapperOpen {
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form button.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .form button:hover {
@@ -794,6 +831,19 @@ header .hamburgerWrapperOpen {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #eeae33;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-wrapper h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -853,17 +903,25 @@ header .hamburgerWrapperOpen {
       grid-template-rows: 1fr 1fr 1fr;
   -ms-flex-preferred-size: 95%;
       flex-basis: 95%;
-  font-size: 20px;
-  letter-spacing: 1px;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  font-style: italic;
 }
 
 .content-address div h3 {
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-address div h3.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -902,26 +960,47 @@ header .hamburgerWrapperOpen {
   }
 }
 
+.content-address div p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-style: italic;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-address div p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
-  .content-address div {
+  .content-address div p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 880px) {
-  .content-address div {
+  .content-address div p {
     font-size: 14px;
   }
 }
 
 @media (max-width: 780px) {
-  .content-address div {
+  .content-address div p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 460px) {
-  .content-address div {
+  .content-address div p {
     font-size: 14px;
   }
 }
@@ -953,6 +1032,19 @@ header .hamburgerWrapperOpen {
   font-size: 25px;
   font-weight: 100;
   margin-bottom: 30px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-openings div h3.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -998,6 +1090,19 @@ header .hamburgerWrapperOpen {
       justify-self: start;
   text-transform: uppercase;
   font-weight: 600;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-openings div p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {

@@ -15,7 +15,7 @@ class MandalaHome {
   }
 
   scrollWeb() {
-    //Scrollowanie diva w pierwszym obrazku
+    //Scrollowanie diva w drugim obrazku
     this.scrollSecondImageHome = new ScrollSecondImageHome();
     this.scrollSecondImageHome.scrollSecondImageHome();
     

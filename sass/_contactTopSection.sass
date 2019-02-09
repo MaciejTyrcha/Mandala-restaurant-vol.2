@@ -1,7 +1,7 @@
 .top-section 
   display: flex
   align-items: flex-start
-  padding: 50px 0
+  padding: 80px 0 50px 0
   margin: 0 30vh
   justify-content: space-around
   min-height: 50vh
@@ -12,7 +12,7 @@
   @media (max-width: 780px)
     flex-wrap: wrap
   @media (max-width: 380px)
-    padding: 30px 0
+    padding: 40px 0 20px 0
 .form
   display: flex
   flex-direction: column
@@ -30,6 +30,12 @@
       margin-bottom: 20px
       font-size: 20px
       padding: 15px 10px
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 18px
       @media (max-width: 1024px)
@@ -52,6 +58,12 @@
       font-size: 20px
       padding: 10px 10px
       resize: vertical
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 18px
       @media (max-width: 1024px)
@@ -70,7 +82,12 @@
     font-size: 30px
     align-self: center
     border-radius: 5px
-    transition: 0.3s linear
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     &:hover 
       background-color: $font-orange-darker
       color: #ddd
@@ -93,6 +110,12 @@
     text-transform: uppercase
     letter-spacing: 4px
     color: $font-orange
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     @media (max-width: 1360px)
       font-size: 34px
     @media (max-width: 1024px)
@@ -118,6 +141,12 @@
       font-size: 30px
       text-transform: uppercase
       margin-bottom: 30px
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 24px
       @media (max-width: 1024px)
@@ -130,21 +159,25 @@
         font-size: 18px
       @media (max-width: 380px)
         font-size: 16px
-
     p 
-    font-size: 20px
-    letter-spacing: 1px
-    justify-self: start
-    font-style: italic
-    @media (max-width: 1024px)
-      font-size: 18px
-    @media (max-width: 880px)
-      font-size: 14px
-    @media (max-width: 780px)
-      font-size: 18px
-    @media (max-width: 460px)
-      font-size: 14px
-   
+      font-size: 20px
+      letter-spacing: 1px
+      justify-self: start
+      font-style: italic
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
+      @media (max-width: 1024px)
+        font-size: 18px
+      @media (max-width: 880px)
+        font-size: 14px
+      @media (max-width: 780px)
+        font-size: 18px
+      @media (max-width: 460px)
+        font-size: 14px
 .content-openings
   display: flex
   flex-direction: column
@@ -158,6 +191,12 @@
       font-size: 25px
       font-weight: 100
       margin-bottom: 30px
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 20px
       @media (max-width: 1024px)
@@ -170,13 +209,18 @@
         font-size: 16px
       @media (max-width: 380px)
         font-size: 15px
-
     p 
       font-size: 25px
       letter-spacing: 1px
       justify-self: start
       text-transform: uppercase
       font-weight: 600
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 20px
       @media (max-width: 1024px)

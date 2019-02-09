@@ -23,9 +23,9 @@ class MandalaContact {
     this.scrollSecondImageContact = new ScrollSecondImageContact();
     this.scrollSecondImageContact.scrollSecondImage();
 
-  //   //Scrollowanie elementów w 2-giej sekcji 
-  //   this.scrollBottomSectionHome = new ScrollBottomSectionHome();
-  //   this.scrollBottomSectionHome.scrollBottomSection();
+    //Scrollowanie elementów w 2-giej sekcji 
+    this.scrollBottomSectionContact = new ScrollBottomSectionContact();
+    this.scrollBottomSectionContact.scrollBottomSection();
   }
 }
 

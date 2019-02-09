@@ -1289,7 +1289,7 @@ header .hamburgerWrapperOpen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 3vh;
+  padding: 80px 3vh 50px 3vh;
   margin: 0 10vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1328,6 +1328,19 @@ header .hamburgerWrapperOpen {
       flex-basis: 47%;
   background-color: black;
   overflow: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.bottom-section aside.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 900px) {
@@ -1372,8 +1385,8 @@ header .hamburgerWrapperOpen {
 .bottom-section aside #map {
   min-width: 100%;
   min-height: 100%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: hover 0.5s ease-in-out;
+  transition: hover 0.5s ease-in-out;
 }
 
 .bottom-section aside #map:hover {
@@ -1437,6 +1450,19 @@ header .hamburgerWrapperOpen {
   margin-bottom: 25px;
   border-bottom: 1px solid #eeae33;
   padding: 0 0 15px 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.bottom-section div h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1600px) {
@@ -1502,6 +1528,19 @@ header .hamburgerWrapperOpen {
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.bottom-section div p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1600px) {

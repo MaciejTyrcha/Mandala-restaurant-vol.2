@@ -1144,10 +1144,6 @@ header .hamburgerWrapperOpen {
 .second-image {
   -ms-flex-preferred-size: 100vh;
       flex-basis: 100vh;
-  background: url("../Rysunki/contact/contactSecondImage1920.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -1157,9 +1153,6 @@ header .hamburgerWrapperOpen {
   left: 10%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  color: #fff;
-  padding: 20px 30px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1520px) {
@@ -1168,15 +1161,13 @@ header .hamburgerWrapperOpen {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .second-image div {
-    background-color: rgba(0, 0, 0, 0.5);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 80%;
-    text-align: center;
   }
 }
 
@@ -1186,68 +1177,110 @@ header .hamburgerWrapperOpen {
   }
 }
 
-.second-image div h1 {
+.second-image div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .second-image div section {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+.second-image div section.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.second-image div section h1 {
   font-size: 85px;
   color: #eeae33;
   font-family: 'Indie Flower', cursive;
 }
 
 @media (max-width: 1660px) {
-  .second-image div h1 {
+  .second-image div section h1 {
     font-size: 75px;
   }
 }
 
 @media (max-width: 1280px) {
-  .second-image div h1 {
+  .second-image div section h1 {
     font-size: 70px;
   }
 }
 
 @media (max-width: 780px) {
-  .second-image div h1 {
+  .second-image div section h1 {
     font-size: 65px;
   }
 }
 
 @media (max-width: 480px) {
-  .second-image div h1 {
+  .second-image div section h1 {
     font-size: 60px;
   }
 }
 
-.second-image div p {
+.second-image div section p {
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
 }
 
 @media (max-width: 1660px) {
-  .second-image div p {
+  .second-image div section p {
     font-size: 36px;
   }
 }
 
 @media (max-width: 1280px) {
-  .second-image div p {
+  .second-image div section p {
     font-size: 34px;
   }
 }
 
 @media (max-width: 780px) {
-  .second-image div p {
+  .second-image div section p {
     font-size: 32px;
   }
 }
 
 @media (max-width: 540px) {
-  .second-image div p {
+  .second-image div section p {
     font-size: 26px;
   }
 }
 
 @media (max-width: 400px) {
-  .second-image div p {
+  .second-image div section p {
     font-size: 20px;
   }
 }

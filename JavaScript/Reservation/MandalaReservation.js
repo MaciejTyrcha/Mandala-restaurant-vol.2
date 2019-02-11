@@ -1,7 +1,7 @@
 class MandalaReservation {
   constructor() {
     window.addEventListener("load", this.loadElement);
-    // window.addEventListener("scroll", this.scrollWeb);
+    window.addEventListener("scroll", this.scrollWeb);
   }
 
   loadElement() {
@@ -14,11 +14,11 @@ class MandalaReservation {
     this.reservationFirstImageSize.changeSize();
   }
 
-  // scrollWeb() {
-  //   //Scrollowanie elementów w 1-szej sekcji
-  //   this.scrollTopSectionAbout = new ScrollTopSectionAbout();
-  //   this.scrollTopSectionAbout.scrollTopSection();
-  // }
+  scrollWeb() {
+    //Scrollowanie elementów w 1-szej sekcji
+    this.scrollTopSectionReservation = new ScrollTopSectionReservation();
+    this.scrollTopSectionReservation.scrollTopSection();
+  }
 }
 
 const mandalaReservation = new MandalaReservation();

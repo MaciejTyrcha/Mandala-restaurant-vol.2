@@ -576,7 +576,7 @@ header .hamburgerWrapperOpen {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 50px 15vh;
+  padding: 80px 15vh 50px 15vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 40vh;
@@ -584,13 +584,13 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 1150px) {
   .top-section {
-    margin: 50px 5vh;
+    padding: 80px 5vh 50px 5vh;
   }
 }
 
 @media (max-width: 960px) {
   .top-section {
-    margin: 50px 20px;
+    padding: 80px 20px 50px 20px;
   }
 }
 
@@ -598,7 +598,7 @@ header .hamburgerWrapperOpen {
   .top-section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 30px 20px;
+    padding: 40px 20px 30px 20px;
   }
 }
 
@@ -638,6 +638,19 @@ header .hamburgerWrapperOpen {
   margin-bottom: 20px;
   font-size: 20px;
   padding: 15px 10px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form form input.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -682,6 +695,19 @@ header .hamburgerWrapperOpen {
   font-size: 20px;
   padding: 10px 10px;
   resize: vertical;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form form #textarea.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1360px) {
@@ -724,8 +750,19 @@ header .hamburgerWrapperOpen {
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+}
+
+.form button.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .form button:hover {
@@ -777,6 +814,19 @@ header .hamburgerWrapperOpen {
   margin-bottom: 25px;
   border-bottom: 1px solid #eeae33;
   padding: 0 0 15px 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-wrapper h1.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1680px) {
@@ -853,6 +903,19 @@ header .hamburgerWrapperOpen {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #eeae33;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-wrapper h2.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1680px) {
@@ -915,6 +978,19 @@ header .hamburgerWrapperOpen {
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 0.5s linear;
+  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+}
+
+.content-wrapper p.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 1600px) {

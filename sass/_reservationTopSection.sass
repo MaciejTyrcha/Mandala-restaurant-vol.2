@@ -1,16 +1,16 @@
 .top-section 
   display: flex
   align-items: flex-start
-  margin: 50px 15vh
+  padding: 80px 15vh 50px 15vh
   justify-content: space-around
   min-height: 40vh
   @media (max-width: 1150px)
-    margin: 50px 5vh
+    padding: 80px 5vh 50px 5vh
   @media (max-width: 960px)
-    margin: 50px 20px
+    padding: 80px 20px 50px 20px
   @media (max-width: 780px)
     flex-wrap: wrap
-    margin: 30px 20px
+    padding: 40px 20px 30px 20px
 .form
   display: flex
   flex-direction: column
@@ -27,6 +27,12 @@
       margin-bottom: 20px
       font-size: 20px
       padding: 15px 10px
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 18px
       @media (max-width: 1024px)
@@ -49,6 +55,12 @@
       font-size: 20px
       padding: 10px 10px
       resize: vertical
+      transform: translateY(20px)
+      opacity: 0
+      transition: transform 1s ease-in-out, opacity 0.5s linear
+      &.active
+        transform: translateY(0)
+        opacity: 1
       @media (max-width: 1360px)
         font-size: 18px
       @media (max-width: 1024px)
@@ -67,7 +79,12 @@
     font-size: 30px
     align-self: center
     border-radius: 5px
-    transition: 0.3s linear
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     &:hover 
       background-color: $font-orange-darker
       color: #ddd
@@ -92,6 +109,12 @@
     margin-bottom: 25px
     border-bottom: 1px solid $font-orange
     padding: 0 0 15px 0
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     @media (max-width: 1680px)
       font-size: 34px
     @media (max-width: 1510px)
@@ -124,6 +147,12 @@
     text-transform: uppercase
     letter-spacing: 4px
     color: $font-orange
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     @media (max-width: 1680px)
       font-size: 34px
     @media (max-width: 1510px)
@@ -148,6 +177,12 @@
     font-size: 20px
     letter-spacing: 1px 
     margin-bottom: 20px
+    transform: translateY(20px)
+    opacity: 0
+    transition: transform 1s ease-in-out, opacity 0.5s linear
+    &.active
+      transform: translateY(0)
+      opacity: 1
     @media (max-width: 1600px)
       font-size: 18px
     @media (max-width: 1400px)

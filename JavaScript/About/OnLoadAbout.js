@@ -14,7 +14,7 @@ class OnLoadAbout {
     this.windowWidth = window.innerWidth;
     this.aboutFirstImage = document.querySelector(".first-image");
 
-    if ( this.windowWidth <= 1000 && this.windowWidth > 650){
+    if (this.windowWidth > 650){
       this.aboutFirstImage.dataset.position = "center";
     }
 

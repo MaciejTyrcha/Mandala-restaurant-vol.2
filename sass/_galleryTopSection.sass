@@ -2,7 +2,7 @@
   display: flex
   align-items: center
   justify-content: center
-  min-height: 1000px
+  min-height: 50vh
   padding: 50px 3vh
   background-color: white
   @media (max-width: 960px)
@@ -28,6 +28,14 @@
     grid-template-columns: repeat(1, 1fr)
     grid-gap: 0
     width: 100%
+  div 
+    min-height: 200px
+    @media (max-width: 450px)
+      min-height: 300px
+    @media (max-height: 900px)
+      min-height: 200px
+    @media (max-height: 1400px)
+      min-height: 150px
 .first-image-top 
   grid-area: span 2 / span 4
   background-color: black
@@ -40,10 +48,8 @@
     opacity: 1
   @media (max-width: 880px)
     grid-area: span 4 / span 3
-    min-height: 200px
   @media (max-width: 450px)
     grid-area: span 2 / span 1
-    min-height: 300px
   div
     background: url('../Rysunki/gallery/1gallery1280.jpg')
     width: 100%

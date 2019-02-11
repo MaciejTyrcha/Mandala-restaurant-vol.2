@@ -572,7 +572,7 @@ header .hamburgerWrapperOpen {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 1000px;
+  min-height: 50vh;
   padding: 50px 3vh;
   background-color: white;
 }
@@ -629,6 +629,28 @@ header .hamburgerWrapperOpen {
   }
 }
 
+.menu-top-section-wrapper div {
+  min-height: 200px;
+}
+
+@media (max-width: 450px) {
+  .menu-top-section-wrapper div {
+    min-height: 300px;
+  }
+}
+
+@media (max-height: 900px) {
+  .menu-top-section-wrapper div {
+    min-height: 200px;
+  }
+}
+
+@media (max-height: 1400px) {
+  .menu-top-section-wrapper div {
+    min-height: 150px;
+  }
+}
+
 .first-image-top {
   grid-area: span 2 / span 4;
   background-color: black;
@@ -651,14 +673,12 @@ header .hamburgerWrapperOpen {
 @media (max-width: 880px) {
   .first-image-top {
     grid-area: span 4 / span 3;
-    min-height: 200px;
   }
 }
 
 @media (max-width: 450px) {
   .first-image-top {
     grid-area: span 2 / span 1;
-    min-height: 300px;
   }
 }
 
@@ -1158,7 +1178,7 @@ footer {
           flex-direction: column;
   padding: 50px 5vh 0 5vh;
   background-color: black;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 @media (max-width: 850px) {
@@ -1584,7 +1604,7 @@ footer {
 .footer-copyrights {
   color: #888;
   position: relative;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
 .footer-copyrights h1 {

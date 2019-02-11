@@ -576,21 +576,22 @@ header .hamburgerWrapperOpen {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 80px 15vh 50px 15vh;
+  padding: 50px 15vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 40vh;
+  background-color: white;
 }
 
 @media (max-width: 1150px) {
   .top-section {
-    padding: 80px 5vh 50px 5vh;
+    padding: 50px 5vh;
   }
 }
 
 @media (max-width: 960px) {
   .top-section {
-    padding: 80px 20px 50px 20px;
+    padding: 50px 20px;
   }
 }
 
@@ -598,7 +599,7 @@ header .hamburgerWrapperOpen {
   .top-section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 40px 20px 30px 20px;
+    padding: 40px 20px 20px 20px;
   }
 }
 

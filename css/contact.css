@@ -587,22 +587,22 @@ header .hamburgerWrapperOpen {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 80px 0 50px 0;
-  margin: 0 30vh;
+  padding: 50px 30vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 50vh;
+  background-color: white;
 }
 
 @media (max-width: 1700px) {
   .top-section {
-    margin: 0 10vh;
+    padding: 50px 10vh;
   }
 }
 
 @media (max-width: 1170px) {
   .top-section {
-    margin: 0 20px;
+    padding: 50px 20px;
   }
 }
 
@@ -615,7 +615,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 380px) {
   .top-section {
-    padding: 40px 0 20px 0;
+    padding: 40px 20px 0 20px;
   }
 }
 
@@ -1289,22 +1289,22 @@ header .hamburgerWrapperOpen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 3vh 50px 3vh;
-  margin: 0 10vh;
+  padding: 50px 10vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 600px;
+  background-color: white;
 }
 
 @media (max-width: 1400px) {
   .bottom-section {
-    margin: 0 5vh;
+    padding: 50px 5vh;
   }
 }
 
 @media (max-width: 1060px) {
   .bottom-section {
-    margin: 0 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -1319,7 +1319,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 380px) {
   .bottom-section {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 }
 

@@ -571,6 +571,7 @@ header .hamburgerWrapperOpen {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 85vh;
+  background-color: white;
 }
 
 @media (max-width: 1170px) {
@@ -1093,11 +1094,12 @@ header .hamburgerWrapperOpen {
           align-items: center;
   min-height: 65vh;
   padding: 50px 3vh;
+  background-color: white;
 }
 
 @media (max-width: 600px) {
   .bottom-section {
-    padding: 30px 3vh;
+    padding: 20px 3vh;
   }
 }
 

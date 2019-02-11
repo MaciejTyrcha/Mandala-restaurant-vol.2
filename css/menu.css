@@ -625,10 +625,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .menu-list h1.active {
@@ -722,10 +722,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .menu-list ul li p.active {
@@ -772,8 +772,7 @@ header .hamburgerWrapperOpen {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 60%;
-  -ms-flex-preferred-size: 50vh;
-      flex-basis: 50vh;
+  min-height: 40vh;
 }
 
 @media (max-width: 1300px) {
@@ -832,10 +831,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .menu-top-section-wrapper h1.active {
@@ -898,10 +897,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .menu-top-section-wrapper div h2.active {
@@ -937,10 +936,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .menu-products td.active {

@@ -658,10 +658,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .first-image-top.active {
@@ -705,10 +705,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .second-image-top.active {
@@ -752,10 +752,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .third-image-top.active {
@@ -799,10 +799,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .fourth-image-top.active {
@@ -846,10 +846,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .fifth-image-top.active {
@@ -893,10 +893,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .sixth-image-top.active {
@@ -940,10 +940,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .seventh-image-top.active {
@@ -987,10 +987,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .eight-image-top.active {
@@ -1034,10 +1034,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .nineth-image-top.active {
@@ -1081,10 +1081,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .tenth-image-top.active {
@@ -1128,10 +1128,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .eleventh-image-top.active {

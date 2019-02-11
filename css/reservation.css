@@ -428,7 +428,6 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 1100px) {
   .first-image div {
-    background-color: rgba(0, 0, 0, 0.5);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -642,10 +641,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .form form input.active {
@@ -699,10 +698,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .form form #textarea.active {
@@ -754,10 +753,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, hover 0.3s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, hover 0.3s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, hover 0.3s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .form button.active {
@@ -818,10 +817,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .content-wrapper h1.active {
@@ -907,10 +906,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .content-wrapper h2.active {
@@ -982,10 +981,10 @@ header .hamburgerWrapperOpen {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: opacity 0.5s linear, -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 0.5s linear;
-  transition: transform 1s ease-in-out, opacity 0.5s linear, -webkit-transform 1s ease-in-out;
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear;
+  transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
 .content-wrapper p.active {

@@ -1324,7 +1324,7 @@ header .hamburgerWrapperOpen {
   }
 }
 
-.bottom-section aside {
+.bottom-section .map {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   background-color: black;
@@ -1338,14 +1338,14 @@ header .hamburgerWrapperOpen {
   transition: transform 0.8s ease-in-out, opacity 0.5s linear, -webkit-transform 0.8s ease-in-out;
 }
 
-.bottom-section aside.active {
+.bottom-section .map.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
 @media (max-width: 900px) {
-  .bottom-section aside {
+  .bottom-section .map {
     -ms-flex-preferred-size: 600px;
         flex-basis: 600px;
     -webkit-box-ordinal-group: 3;
@@ -1355,59 +1355,59 @@ header .hamburgerWrapperOpen {
 }
 
 @media (max-width: 750px) {
-  .bottom-section aside {
+  .bottom-section .map {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
   }
 }
 
 @media (max-width: 420px) {
-  .bottom-section aside {
+  .bottom-section .map {
     -ms-flex-preferred-size: 300px;
         flex-basis: 300px;
   }
 }
 
 @media (max-width: 350px) {
-  .bottom-section aside {
+  .bottom-section .map {
     -ms-flex-preferred-size: 250px;
         flex-basis: 250px;
   }
 }
 
-.bottom-section aside #map {
+.bottom-section .map #map {
   min-width: 100%;
   min-height: 100%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.bottom-section aside #map:hover {
+.bottom-section .map #map:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.5;
 }
 
 @media (max-width: 900px) {
-  .bottom-section aside #map {
+  .bottom-section .map #map {
     min-height: 600px;
   }
 }
 
 @media (max-width: 750px) {
-  .bottom-section aside #map {
+  .bottom-section .map #map {
     min-height: 400px;
   }
 }
 
 @media (max-width: 420px) {
-  .bottom-section aside #map {
+  .bottom-section .map #map {
     min-height: 300px;
   }
 }
 
 @media (max-width: 350px) {
-  .bottom-section aside #map {
+  .bottom-section .map #map {
     min-height: 250px;
   }
 }
@@ -1426,8 +1426,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 900px) {
   .bottom-section div {
-    -ms-flex-preferred-size: 30vh;
-        flex-basis: 30vh;
+    min-height: 20vh;
     margin-bottom: 30px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1437,7 +1436,7 @@ header .hamburgerWrapperOpen {
 
 @media (max-width: 500px) {
   .bottom-section div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 

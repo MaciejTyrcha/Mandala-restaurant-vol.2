@@ -53,25 +53,25 @@
 
   <section class="top-section ">
     <div class="menu-list">
-      <h1>Menu</h1>
+      <h1 id="button-whole" onclick="clickMenu.showWholeMenu()">Menu</h1>
       <ul>
         <li>
-          <p id="button-przystawki"> Przystawki </p>
+          <p id="button-przystawki" onclick="clickMenu.clickMenuSections('przystawki' , this)"> Przystawki </p>
         </li>
         <li>
-          <p id="button-zupy"> Zupy </p>
+          <p id="button-zupy" onclick="clickMenu.clickMenuSections('zupy' , this)"> Zupy </p>
         </li>
         <li>
-          <p id="button-dania-glowne"> Dania główne </p>
+          <p id="button-dania-glowne" onclick="clickMenu.clickMenuSections('dania-glowne' , this)"> Dania główne </p>
         </li>
         <li>
-          <p id="button-desery"> Desery </p>
+          <p id="button-desery" onclick="clickMenu.clickMenuSections('desery' , this)"> Desery </p>
         </li>
         <li>
-          <p id="button-napoje"> Napoje </p>
+          <p id="button-napoje" onclick="clickMenu.clickMenuSections('napoje' , this)"> Napoje </p>
         </li>
         <li>
-          <p id="button-alkohole"> Alkohole </p>
+          <p id="button-alkohole" onclick="clickMenu.clickMenuSections('alkohole' , this)"> Alkohole </p>
         </li>
       </ul>
     </div>

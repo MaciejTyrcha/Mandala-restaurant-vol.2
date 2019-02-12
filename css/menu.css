@@ -573,7 +573,7 @@ header .hamburgerWrapperOpen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 60vh;
+  min-height: 50vh;
   padding: 50px 3vh;
   background-color: white;
 }
@@ -622,6 +622,7 @@ header .hamburgerWrapperOpen {
   margin-bottom: 15px;
   text-align: center;
   border-bottom: 2px solid #eeae33;
+  cursor: pointer;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
@@ -1004,26 +1005,6 @@ header .hamburgerWrapperOpen {
     font-size: 16px;
     width: 80px;
   }
-}
-
-#zupy {
-  display: none;
-}
-
-#dania-glowne {
-  display: none;
-}
-
-#desery {
-  display: none;
-}
-
-#napoje {
-  display: none;
-}
-
-#alkohole {
-  display: none;
 }
 
 footer {

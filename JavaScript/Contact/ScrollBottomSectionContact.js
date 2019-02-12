@@ -16,7 +16,7 @@ class ScrollBottomSectionContact {
 
     this.H1 = document.querySelector(".bottom-section h1");
     this.allP = [...document.querySelectorAll(".bottom-section p")];
-    this.map = document.querySelector("aside");
+    this.map = document.querySelector(".bottom-section .map");
 
     if(this.windowWidth > 900) {
       if ( this.scrollValue > this.H1.offsetTop + this.H1.clientHeight - this.windowHeight) {

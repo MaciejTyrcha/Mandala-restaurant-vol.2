@@ -10,6 +10,7 @@ class ScrollTopSectionMenu {
     this.allTdFirstChild = ""
     this.allTdAfter = ""
     this.wholeContent = []
+    this.wholeButtons = ""
   }
 
   scrollTopSection() {
@@ -23,10 +24,11 @@ class ScrollTopSectionMenu {
     this.allH2 = [...document.querySelectorAll(".top-section h2")];
     this.allTdFirstChild = [...document.querySelectorAll(".top-section td:first-child")];
     this.allTdAfter = [...document.querySelectorAll(".top-section td:last-child")];
+    this.wholeButtons = document.querySelectorAll(".menu-list p");
 
-    this.wholeContent = [this.allH1, this.allP, this.allH2];
+    this.wholeContent = [this.allTdAfter, this.allTdFirstChild, this.allH1, this.allP, this.allH2];
 
-    for ( let i = 0; i < this.wholeContent.length; i++) {
+    for ( let i = 2; i < this.wholeContent.length; i++) {
       let wholeContent = this.wholeContent[i];
       for ( let j = 0; j < wholeContent.length; j++) {
         let wholeContentDeeper = wholeContent[j];
@@ -36,10 +38,9 @@ class ScrollTopSectionMenu {
       }
     }
     let k = 0;
-    for ( let j = 0; j < this.allTdFirstChild.length; j++) {
-      let allTdFirstChild = this.allTdFirstChild[j];
-      if ( this.scrollValue > allTdFirstChild.offsetTop + allTdFirstChild.clientHeight - this.windowHeight) {
-        allTdFirstChild.classList.add('active');
+    for ( let i = 0; i < this.allTdFirstChild.length; i++) {
+      if ( this.scrollValue > this.allTdFirstChild[i].offsetTop + this.allTdFirstChild[i].clientHeight - this.windowHeight) {
+        this.allTdFirstChild[i].classList.add('active');
         this.allTdAfter[k].classList.add('active');
       }
       k++;

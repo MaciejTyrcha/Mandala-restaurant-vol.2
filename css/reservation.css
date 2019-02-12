@@ -151,10 +151,10 @@ header nav {
     -webkit-clip-path: circle(0px at top right);
             clip-path: circle(0px at top right);
     width: 100%;
-    -webkit-transition: -webkit-clip-path ease-in-out 600ms;
-    transition: -webkit-clip-path ease-in-out 600ms;
-    transition: clip-path ease-in-out 600ms;
-    transition: clip-path ease-in-out 600ms, -webkit-clip-path ease-in-out 600ms;
+    -webkit-transition: -webkit-clip-path ease-in-out 300ms;
+    transition: -webkit-clip-path ease-in-out 300ms;
+    transition: clip-path ease-in-out 300ms;
+    transition: clip-path ease-in-out 300ms, -webkit-clip-path ease-in-out 300ms;
     position: fixed;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -196,7 +196,7 @@ header nav ul li {
 
 @media (max-width: 1250px) {
   header nav ul li {
-    padding: 15px 18px;
+    padding: 14px 18px;
   }
 }
 

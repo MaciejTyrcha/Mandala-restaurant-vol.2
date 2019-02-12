@@ -151,10 +151,10 @@ header nav {
     -webkit-clip-path: circle(0px at top right);
             clip-path: circle(0px at top right);
     width: 100%;
-    -webkit-transition: -webkit-clip-path ease-in-out 600ms;
-    transition: -webkit-clip-path ease-in-out 600ms;
-    transition: clip-path ease-in-out 600ms;
-    transition: clip-path ease-in-out 600ms, -webkit-clip-path ease-in-out 600ms;
+    -webkit-transition: -webkit-clip-path ease-in-out 300ms;
+    transition: -webkit-clip-path ease-in-out 300ms;
+    transition: clip-path ease-in-out 300ms;
+    transition: clip-path ease-in-out 300ms, -webkit-clip-path ease-in-out 300ms;
     position: fixed;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -196,7 +196,7 @@ header nav ul li {
 
 @media (max-width: 1250px) {
   header nav ul li {
-    padding: 15px 18px;
+    padding: 14px 18px;
   }
 }
 
@@ -620,11 +620,8 @@ header .hamburgerWrapperOpen {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: secondGrid;
-  background: url("../Rysunki/head/HeadTop3.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   border-radius: 0 0 0 80px;
+  overflow: hidden;
 }
 
 @media (max-width: 1170px) {
@@ -639,6 +636,15 @@ header .hamburgerWrapperOpen {
   }
 }
 
+.second-grid div {
+  background: url("../Rysunki/head/HeadTop3.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+}
+
 .third-grid {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -649,11 +655,8 @@ header .hamburgerWrapperOpen {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: fourthGrid;
-  background: url("../Rysunki/about/aboutTopSection640.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   border-radius: 0 80px 80px 0;
+  overflow: hidden;
 }
 
 @media (max-width: 1170px) {
@@ -668,6 +671,15 @@ header .hamburgerWrapperOpen {
   }
 }
 
+.fourth-grid div {
+  background: url("../Rysunki/about/aboutTopSection640.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+}
+
 .fifth-grid {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -678,10 +690,7 @@ header .hamburgerWrapperOpen {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: sixthGrid;
-  background: url("../Rysunki/about/aboutTopSection3-640.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   border-radius: 80px 0 0 0;
 }
 
@@ -695,6 +704,15 @@ header .hamburgerWrapperOpen {
   .sixth-grid {
     border-radius: 0;
   }
+}
+
+.sixth-grid div {
+  background: url("../Rysunki/about/aboutTopSection3-640.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
 }
 
 .about-content {
@@ -957,7 +975,7 @@ header .hamburgerWrapperOpen {
 
 .about-image {
   margin-bottom: 50px;
-  min-height: 400px;
+  height: 400px;
 }
 
 @media (max-width: 640px) {

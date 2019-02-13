@@ -1,26 +1,8 @@
 class ScrollTopSectionGallery {
   constructor() {
-    this.scrollValue = 0
-    this.windowHeight = 0
-    this.windowWidth = 0
-    this.firstImage = ""
-    this.secondImage = ""
-    this.thirdImage = ""
-    this.fourthImage = ""
-    this.fifthImage = ""
-    this.sixthImage = ""
-    this.seventhImage = ""
-    this.eightImage = ""
-    this.ninethImage = ""
-    this.tenthImage = ""
-    this.eleventhImage = ""
-  }
-
-  scrollTopSection() {
     this.scrollValue = window.scrollY;
     this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
-
     this.firstImage = document.querySelector(".top-section .first-image-top");
     this.secondImage = document.querySelector(".top-section .second-image-top");
     this.thirdImage = document.querySelector(".top-section .third-image-top");
@@ -32,6 +14,9 @@ class ScrollTopSectionGallery {
     this.ninethImage = document.querySelector(".top-section .nineth-image-top");
     this.tenthImage = document.querySelector(".top-section .tenth-image-top");
     this.eleventhImage = document.querySelector(".top-section .eleventh-image-top");
+  }
+
+  scrollTopSection() {
 
     if (this.windowWidth > 880 ) {
       //1 i 2

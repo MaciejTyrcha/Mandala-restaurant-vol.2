@@ -1,18 +1,15 @@
 class OnLoadContact {
   constructor() {
-    this.divContactFirstImage = ""
-    this.contactFirstImage = ""
-    this.windowWidth = 0
+    this.divContactFirstImage = document.querySelector(".first-image div section");
+    this.windowWidth = window.innerWidth;
+    this.contactFirstImage = document.querySelector(".first-image");
   }
 
   showFirstImageContact() {
-    this.divContactFirstImage = document.querySelector(".first-image div section");
     this.divContactFirstImage.classList.add("active");
   }
 
   changeFirstImageSize() {
-    this.windowWidth = window.innerWidth;
-    this.contactFirstImage = document.querySelector(".first-image");
     if (this.windowWidth > 600){
       this.contactFirstImage.dataset.position = "center";
     }

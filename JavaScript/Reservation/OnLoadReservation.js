@@ -1,19 +1,15 @@
 class OnLoadReservation {
   constructor() {
-    this.divReservationFirstImage = ""
-    this.reservationFirstImage = ""
-    this.windowWidth = 0
+    this.divReservationFirstImage = document.querySelector(".first-image div section");
+    this.reservationFirstImage = document.querySelector(".first-image");
+    this.windowWidth = window.innerWidth;
   }
 
   showFirstImageReservation() {
-    this.divReservationFirstImage = document.querySelector(".first-image div section");
     this.divReservationFirstImage.classList.add("active");
   }
 
   changeSize() {
-    this.windowWidth = window.innerWidth;
-    this.reservationFirstImage = document.querySelector(".first-image");
-
     if ( this.windowWidth > 500){
       this.reservationFirstImage.dataset.position = "center";
     }
